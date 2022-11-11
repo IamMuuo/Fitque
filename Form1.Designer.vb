@@ -556,7 +556,7 @@ Partial Class Form1
         Me.MaximumSize = New System.Drawing.Size(800, 600)
         Me.MinimumSize = New System.Drawing.Size(800, 600)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = " "
         Me.panForm.ResumeLayout(False)
         Me.panForm.PerformLayout()
         CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
