@@ -26,7 +26,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.panForm = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2CirclePictureBox1 = New Guna.UI2.WinForms.Guna2CirclePictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.cmdSignUp = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -53,7 +53,7 @@ Partial Class Form1
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.cmdFinish = New Guna.UI2.WinForms.Guna2Button()
         Me.panForm.SuspendLayout()
-        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panSignUp.SuspendLayout()
         Me.grpFinishing.SuspendLayout()
         Me.grpContact.SuspendLayout()
@@ -72,7 +72,7 @@ Partial Class Form1
         '
         Me.panForm.BackColor = System.Drawing.Color.White
         Me.panForm.BorderColor = System.Drawing.Color.Transparent
-        Me.panForm.Controls.Add(Me.Guna2CirclePictureBox1)
+        Me.panForm.Controls.Add(Me.PictureBox1)
         Me.panForm.Controls.Add(Me.Guna2HtmlLabel2)
         Me.panForm.Controls.Add(Me.cmdSignUp)
         Me.panForm.Controls.Add(Me.Guna2HtmlLabel1)
@@ -84,16 +84,15 @@ Partial Class Form1
         Me.panForm.Size = New System.Drawing.Size(306, 598)
         Me.panForm.TabIndex = 0
         '
-        'Guna2CirclePictureBox1
+        'PictureBox1
         '
-        Me.Guna2CirclePictureBox1.Image = CType(resources.GetObject("Guna2CirclePictureBox1.Image"), System.Drawing.Image)
-        Me.Guna2CirclePictureBox1.ImageRotate = 0!
-        Me.Guna2CirclePictureBox1.Location = New System.Drawing.Point(66, 67)
-        Me.Guna2CirclePictureBox1.Name = "Guna2CirclePictureBox1"
-        Me.Guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CirclePictureBox1.Size = New System.Drawing.Size(137, 122)
-        Me.Guna2CirclePictureBox1.TabIndex = 6
-        Me.Guna2CirclePictureBox1.TabStop = False
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(68, 53)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(112, 105)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
         '
         'Guna2HtmlLabel2
         '
@@ -511,7 +510,7 @@ Partial Class Form1
         Me.cmdSignIn.Name = "cmdSignIn"
         Me.cmdSignIn.Size = New System.Drawing.Size(126, 45)
         Me.cmdSignIn.TabIndex = 3
-        Me.cmdSignIn.Text = "Sign In"
+        Me.cmdSignIn.Text = "Bck to login"
         '
         'Guna2HtmlLabel4
         '
@@ -559,7 +558,7 @@ Partial Class Form1
         Me.Text = " "
         Me.panForm.ResumeLayout(False)
         Me.panForm.PerformLayout()
-        CType(Me.Guna2CirclePictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.panSignUp.ResumeLayout(False)
         Me.panSignUp.PerformLayout()
         Me.grpFinishing.ResumeLayout(False)
@@ -577,7 +576,6 @@ Partial Class Form1
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents cmdSignUp As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2CirclePictureBox1 As Guna.UI2.WinForms.Guna2CirclePictureBox
     Friend WithEvents cmdClose As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents panSignUp As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -597,4 +595,5 @@ Partial Class Form1
     Friend WithEvents grpContact As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents txtPhone As Sipaa.Framework.STextBox
     Friend WithEvents txtEmail As Sipaa.Framework.STextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
