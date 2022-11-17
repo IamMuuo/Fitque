@@ -53,11 +53,11 @@ Public Class Form1
             MsgBox("Please enter a valid username", MsgBoxStyle.Critical)
         End If
 
-        Try
-            Dim sql As String
-            sql = "INSERT INTO Members ([First], [Other], [Last], [Gender], [Height],[Weight], [Email], [Phone], [Password]) values(" & txtFirst.Texts.Trim & "," & txtOther.Texts.Trim & ", " & txtLast.Texts.Trim & "," & cboGender.Text & ", " & cboHeight.Text & ", " & cboWeight.Text & "," & txtEmail.Texts.Trim & ", " & txtPhone.Texts.Trim & ", " & txtPwd.Texts.Trim & ");"
+        'Try
+        Dim sql As String
+        sql = "INSERT INTO Members ([First], [Other], [Last], [Gender], [Height],[Weight], [Email], [Phone], [Password]) values('" & txtFirst.Texts.Trim & "','" & txtOther.Texts.Trim & "', '" & txtLast.Texts.Trim & "','" & cboGender.Text & "', '" & cboHeight.Text & "', '" & cboWeight.Text & "','" & txtEmail.Texts.Trim() & "', '" & txtPhone.Texts.Trim & "', '" & txtPass.Texts.Trim & "');"
 
-            Dim cmd As New OleDbCommand
+        Dim cmd As New OleDbCommand
             con.Open()
             cmd.Connection = con
             cmd.CommandText = sql
@@ -69,10 +69,10 @@ Public Class Form1
             Else
                 MsgBox("Couldn't register you, please check your details and try again", Title:="Registration Error")
             End If
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
-            con.Close()
-        End Try
+        'Catch ex As Exception
+        'MsgBox(ex.Message)
+        'Finally
+        con.Close()
+        'End Try
     End Sub
 End Class

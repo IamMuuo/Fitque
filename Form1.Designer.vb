@@ -33,7 +33,6 @@ Partial Class Form1
         Me.cmdLogin = New Guna.UI2.WinForms.Guna2Button()
         Me.txtPwd = New Sipaa.Framework.STextBox()
         Me.txtUname = New Sipaa.Framework.STextBox()
-        Me.cmdClose = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.panSignUp = New Guna.UI2.WinForms.Guna2Panel()
         Me.grpFinishing = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.txtConfirm = New Sipaa.Framework.STextBox()
@@ -52,6 +51,7 @@ Partial Class Form1
         Me.cmdSignIn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.cmdFinish = New Guna.UI2.WinForms.Guna2Button()
+        Me.cmdClose = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.panForm.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panSignUp.SuspendLayout()
@@ -109,6 +109,7 @@ Partial Class Form1
         '
         Me.cmdSignUp.Animated = True
         Me.cmdSignUp.BorderRadius = 8
+        Me.cmdSignUp.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.cmdSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.cmdSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -119,6 +120,8 @@ Partial Class Form1
         Me.cmdSignUp.HoverState.FillColor = System.Drawing.Color.Tomato
         Me.cmdSignUp.Location = New System.Drawing.Point(145, 543)
         Me.cmdSignUp.Name = "cmdSignUp"
+        Me.cmdSignUp.ShadowDecoration.BorderRadius = 10
+        Me.cmdSignUp.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
         Me.cmdSignUp.Size = New System.Drawing.Size(126, 45)
         Me.cmdSignUp.TabIndex = 3
         Me.cmdSignUp.Text = "Sign Up"
@@ -138,6 +141,7 @@ Partial Class Form1
         '
         Me.cmdLogin.Animated = True
         Me.cmdLogin.BorderRadius = 8
+        Me.cmdLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.cmdLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.cmdLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -148,6 +152,8 @@ Partial Class Form1
         Me.cmdLogin.HoverState.FillColor = System.Drawing.Color.RoyalBlue
         Me.cmdLogin.Location = New System.Drawing.Point(13, 542)
         Me.cmdLogin.Name = "cmdLogin"
+        Me.cmdLogin.ShadowDecoration.BorderRadius = 10
+        Me.cmdLogin.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
         Me.cmdLogin.Size = New System.Drawing.Size(126, 45)
         Me.cmdLogin.TabIndex = 2
         Me.cmdLogin.Text = "Login"
@@ -196,24 +202,6 @@ Partial Class Form1
         Me.txtUname.Texts = ""
         Me.txtUname.UnderlinedStyle = False
         '
-        'cmdClose
-        '
-        Me.cmdClose.Animated = True
-        Me.cmdClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.cmdClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.cmdClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.cmdClose.FillColor = System.Drawing.Color.IndianRed
-        Me.cmdClose.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmdClose.ForeColor = System.Drawing.Color.White
-        Me.cmdClose.HoverState.FillColor = System.Drawing.Color.Firebrick
-        Me.cmdClose.Location = New System.Drawing.Point(748, 12)
-        Me.cmdClose.Name = "cmdClose"
-        Me.cmdClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.cmdClose.Size = New System.Drawing.Size(40, 40)
-        Me.cmdClose.TabIndex = 4
-        Me.cmdClose.Text = "x"
-        '
         'panSignUp
         '
         Me.panSignUp.BackColor = System.Drawing.Color.White
@@ -225,7 +213,7 @@ Partial Class Form1
         Me.panSignUp.Controls.Add(Me.cmdSignIn)
         Me.panSignUp.Controls.Add(Me.Guna2HtmlLabel4)
         Me.panSignUp.Controls.Add(Me.cmdFinish)
-        Me.panSignUp.Location = New System.Drawing.Point(259, 1)
+        Me.panSignUp.Location = New System.Drawing.Point(313, 0)
         Me.panSignUp.Name = "panSignUp"
         Me.panSignUp.Size = New System.Drawing.Size(541, 598)
         Me.panSignUp.TabIndex = 5
@@ -498,6 +486,7 @@ Partial Class Form1
         '
         Me.cmdSignIn.Animated = True
         Me.cmdSignIn.BorderRadius = 8
+        Me.cmdSignIn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdSignIn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.cmdSignIn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.cmdSignIn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -508,6 +497,8 @@ Partial Class Form1
         Me.cmdSignIn.HoverState.FillColor = System.Drawing.Color.Tomato
         Me.cmdSignIn.Location = New System.Drawing.Point(145, 543)
         Me.cmdSignIn.Name = "cmdSignIn"
+        Me.cmdSignIn.ShadowDecoration.BorderRadius = 10
+        Me.cmdSignIn.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
         Me.cmdSignIn.Size = New System.Drawing.Size(126, 45)
         Me.cmdSignIn.TabIndex = 3
         Me.cmdSignIn.Text = "Bck to login"
@@ -527,6 +518,7 @@ Partial Class Form1
         '
         Me.cmdFinish.Animated = True
         Me.cmdFinish.BorderRadius = 8
+        Me.cmdFinish.Cursor = System.Windows.Forms.Cursors.Hand
         Me.cmdFinish.DisabledState.BorderColor = System.Drawing.Color.DarkGray
         Me.cmdFinish.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
         Me.cmdFinish.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
@@ -537,15 +529,38 @@ Partial Class Form1
         Me.cmdFinish.HoverState.FillColor = System.Drawing.Color.RoyalBlue
         Me.cmdFinish.Location = New System.Drawing.Point(13, 542)
         Me.cmdFinish.Name = "cmdFinish"
+        Me.cmdFinish.ShadowDecoration.BorderRadius = 10
+        Me.cmdFinish.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(10)
         Me.cmdFinish.Size = New System.Drawing.Size(126, 45)
         Me.cmdFinish.TabIndex = 2
         Me.cmdFinish.Text = "Get Started"
+        '
+        'cmdClose
+        '
+        Me.cmdClose.Animated = True
+        Me.cmdClose.BackColor = System.Drawing.Color.Transparent
+        Me.cmdClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdClose.FillColor = System.Drawing.Color.IndianRed
+        Me.cmdClose.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdClose.ForeColor = System.Drawing.Color.White
+        Me.cmdClose.HoverState.FillColor = System.Drawing.Color.Firebrick
+        Me.cmdClose.Location = New System.Drawing.Point(748, 12)
+        Me.cmdClose.Name = "cmdClose"
+        Me.cmdClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdClose.Size = New System.Drawing.Size(40, 40)
+        Me.cmdClose.TabIndex = 4
+        Me.cmdClose.Text = "x"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.BackColor = System.Drawing.Color.White
+        Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.panSignUp)
         Me.Controls.Add(Me.cmdClose)
