@@ -36,7 +36,14 @@ Partial Class Form2
         Me.Guna2ContainerControl2 = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.Guna2ContainerControl1 = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.Guna2ContainerControl3 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.panSettings = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.GunaPolarAreaDataset1 = New Guna.Charts.WinForms.GunaPolarAreaDataset()
         Me.panHome.SuspendLayout()
+        Me.panSettings.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -176,7 +183,7 @@ Partial Class Form2
         Me.panHome.Controls.Add(Me.Guna2ContainerControl1)
         Me.panHome.Controls.Add(Me.Guna2ContainerControl3)
         Me.panHome.FillColor = System.Drawing.Color.Transparent
-        Me.panHome.Location = New System.Drawing.Point(78, 61)
+        Me.panHome.Location = New System.Drawing.Point(68, 583)
         Me.panHome.Name = "panHome"
         Me.panHome.Size = New System.Drawing.Size(710, 527)
         Me.panHome.TabIndex = 12
@@ -241,6 +248,64 @@ Partial Class Form2
         Me.Guna2ContainerControl3.Size = New System.Drawing.Size(612, 241)
         Me.Guna2ContainerControl3.TabIndex = 2
         '
+        'panSettings
+        '
+        Me.panSettings.BorderRadius = 12
+        Me.panSettings.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.panSettings.Controls.Add(Me.PictureBox1)
+        Me.panSettings.Controls.Add(Me.Guna2GradientCircleButton1)
+        Me.panSettings.Location = New System.Drawing.Point(191, 88)
+        Me.panSettings.Name = "panSettings"
+        Me.panSettings.Size = New System.Drawing.Size(491, 451)
+        Me.panSettings.TabIndex = 13
+        Me.panSettings.Text = "Guna2ContainerControl5"
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(180, 5)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(125, 33)
+        Me.Guna2HtmlLabel1.TabIndex = 2
+        Me.Guna2HtmlLabel1.Text = "About Me"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Enabled = False
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(205, 84)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'Guna2GradientCircleButton1
+        '
+        Me.Guna2GradientCircleButton1.Animated = True
+        Me.Guna2GradientCircleButton1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientCircleButton1.FillColor = System.Drawing.Color.MediumVioletRed
+        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton1.Image = CType(resources.GetObject("Guna2GradientCircleButton1.Image"), System.Drawing.Image)
+        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
+        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(35, 35)
+        Me.Guna2GradientCircleButton1.TabIndex = 0
+        '
+        'GunaPolarAreaDataset1
+        '
+        Me.GunaPolarAreaDataset1.Label = "PolarArea1"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -248,6 +313,7 @@ Partial Class Form2
         Me.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.panSettings)
         Me.Controls.Add(Me.panHome)
         Me.Controls.Add(Me.cmdSettings)
         Me.Controls.Add(Me.cmdDiet)
@@ -261,6 +327,9 @@ Partial Class Form2
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fitque | Dashboard"
         Me.panHome.ResumeLayout(False)
+        Me.panSettings.ResumeLayout(False)
+        Me.panSettings.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -278,4 +347,9 @@ Partial Class Form2
     Friend WithEvents Guna2ContainerControl2 As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents Guna2ContainerControl1 As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents Guna2ContainerControl3 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents panSettings As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Guna2GradientCircleButton1 As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents GunaPolarAreaDataset1 As Guna.Charts.WinForms.GunaPolarAreaDataset
 End Class

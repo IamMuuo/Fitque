@@ -17,9 +17,32 @@ Public Class Form1
         Else
 
             '' query info from the database and authenticate
+            Try
+                con.Open()
+                Dim cmd As New OleDbCommand("SELECT COUNT(*) FROM Members WHERE Email=? AND Password=?", con)
+                cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = txtUname.Texts.Trim
+                cmd.Parameters.AddWithValue("@2", OleDb.OleDbType.VarChar).Value = txtPwd.Texts.Trim
 
-            Me.Hide()
-            Form2.Show()
+
+
+                Dim i = Convert.ToInt32(cmd.ExecuteScalar())
+
+                If i > 0 Then
+                    MsgBox("Login suceeded", MsgBoxStyle.Information, Title:="Success")
+                    Me.Hide()
+                    Form2.username = txtUname.Texts.Trim
+                    Form2.Show()
+                Else
+                    MsgBox("Check your login details and try again!", MsgBoxStyle.Critical, "Login Verification Failure")
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                con.Close()
+            End Try
+
+
+
         End If
     End Sub
 
@@ -53,11 +76,11 @@ Public Class Form1
             MsgBox("Please enter a valid username", MsgBoxStyle.Critical)
         End If
 
-        'Try
-        Dim sql As String
-        sql = "INSERT INTO Members ([First], [Other], [Last], [Gender], [Height],[Weight], [Email], [Phone], [Password]) values('" & txtFirst.Texts.Trim & "','" & txtOther.Texts.Trim & "', '" & txtLast.Texts.Trim & "','" & cboGender.Text & "', '" & cboHeight.Text & "', '" & cboWeight.Text & "','" & txtEmail.Texts.Trim() & "', '" & txtPhone.Texts.Trim & "', '" & txtPass.Texts.Trim & "');"
+        Try
+            Dim sql As String
+            sql = "INSERT INTO Members ([First], [Other], [Last], [Gender], [Height],[Weight], [Email], [Phone], [Password]) values('" & txtFirst.Texts.Trim & "','" & txtOther.Texts.Trim & "', '" & txtLast.Texts.Trim & "','" & cboGender.Text & "', '" & cboHeight.Text & "', '" & cboWeight.Text & "','" & txtEmail.Texts.Trim() & "', '" & txtPhone.Texts.Trim & "', '" & txtPass.Texts.Trim & "');"
 
-        Dim cmd As New OleDbCommand
+            Dim cmd As New OleDbCommand
             con.Open()
             cmd.Connection = con
             cmd.CommandText = sql
@@ -69,10 +92,10 @@ Public Class Form1
             Else
                 MsgBox("Couldn't register you, please check your details and try again", Title:="Registration Error")
             End If
-        'Catch ex As Exception
-        'MsgBox(ex.Message)
-        'Finally
-        con.Close()
-        'End Try
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
     End Sub
 End Class
