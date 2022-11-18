@@ -19,7 +19,7 @@ Public Class Form1
             '' query info from the database and authenticate
             Try
                 con.Open()
-                Dim cmd As New OleDbCommand("SELECT COUNT(*) FROM Members WHERE Email=? AND Password=?", con)
+                Dim cmd As New OleDbCommand("SELECT COUNT(*) FROM Members WHERE Email=? AND [Password]=?", con)
                 cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = txtUname.Texts.Trim
                 cmd.Parameters.AddWithValue("@2", OleDb.OleDbType.VarChar).Value = txtPwd.Texts.Trim
 

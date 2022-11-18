@@ -37,6 +37,10 @@ Partial Class Form2
         Me.Guna2ContainerControl1 = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.Guna2ContainerControl3 = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.panSettings = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.cmdChangePwd = New Guna.UI2.WinForms.Guna2Button()
+        Me.txtConfPwd = New Sipaa.Framework.STextBox()
+        Me.txtNewPwd = New Sipaa.Framework.STextBox()
+        Me.grpDetails = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
@@ -251,6 +255,10 @@ Partial Class Form2
         'panSettings
         '
         Me.panSettings.BorderRadius = 12
+        Me.panSettings.Controls.Add(Me.cmdChangePwd)
+        Me.panSettings.Controls.Add(Me.txtConfPwd)
+        Me.panSettings.Controls.Add(Me.txtNewPwd)
+        Me.panSettings.Controls.Add(Me.grpDetails)
         Me.panSettings.Controls.Add(Me.Guna2HtmlLabel1)
         Me.panSettings.Controls.Add(Me.PictureBox1)
         Me.panSettings.Controls.Add(Me.Guna2GradientCircleButton1)
@@ -260,16 +268,89 @@ Partial Class Form2
         Me.panSettings.TabIndex = 13
         Me.panSettings.Text = "Guna2ContainerControl5"
         '
+        'cmdChangePwd
+        '
+        Me.cmdChangePwd.BackColor = System.Drawing.Color.Transparent
+        Me.cmdChangePwd.BorderRadius = 8
+        Me.cmdChangePwd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdChangePwd.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdChangePwd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdChangePwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdChangePwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdChangePwd.FillColor = System.Drawing.Color.OrangeRed
+        Me.cmdChangePwd.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdChangePwd.ForeColor = System.Drawing.Color.White
+        Me.cmdChangePwd.HoverState.FillColor = System.Drawing.Color.Tomato
+        Me.cmdChangePwd.Location = New System.Drawing.Point(181, 405)
+        Me.cmdChangePwd.Name = "cmdChangePwd"
+        Me.cmdChangePwd.Size = New System.Drawing.Size(124, 43)
+        Me.cmdChangePwd.TabIndex = 6
+        Me.cmdChangePwd.Text = "&Change Password"
+        '
+        'txtConfPwd
+        '
+        Me.txtConfPwd.BackColor = System.Drawing.Color.White
+        Me.txtConfPwd.BorderColor = System.Drawing.Color.MediumSlateBlue
+        Me.txtConfPwd.BorderFocusColor = System.Drawing.Color.HotPink
+        Me.txtConfPwd.BorderRadius = 8
+        Me.txtConfPwd.BorderSize = 2
+        Me.txtConfPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtConfPwd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtConfPwd.Location = New System.Drawing.Point(258, 334)
+        Me.txtConfPwd.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtConfPwd.Multiline = False
+        Me.txtConfPwd.Name = "txtConfPwd"
+        Me.txtConfPwd.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
+        Me.txtConfPwd.PasswordChar = True
+        Me.txtConfPwd.PlaceholderColor = System.Drawing.Color.DarkGray
+        Me.txtConfPwd.PlaceholderText = "Confirm Password"
+        Me.txtConfPwd.Size = New System.Drawing.Size(189, 31)
+        Me.txtConfPwd.TabIndex = 5
+        Me.txtConfPwd.Texts = ""
+        Me.txtConfPwd.UnderlinedStyle = False
+        '
+        'txtNewPwd
+        '
+        Me.txtNewPwd.BackColor = System.Drawing.Color.White
+        Me.txtNewPwd.BorderColor = System.Drawing.Color.MediumSlateBlue
+        Me.txtNewPwd.BorderFocusColor = System.Drawing.Color.HotPink
+        Me.txtNewPwd.BorderRadius = 8
+        Me.txtNewPwd.BorderSize = 2
+        Me.txtNewPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNewPwd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtNewPwd.Location = New System.Drawing.Point(54, 334)
+        Me.txtNewPwd.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNewPwd.Multiline = False
+        Me.txtNewPwd.Name = "txtNewPwd"
+        Me.txtNewPwd.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
+        Me.txtNewPwd.PasswordChar = True
+        Me.txtNewPwd.PlaceholderColor = System.Drawing.Color.DarkGray
+        Me.txtNewPwd.PlaceholderText = "New password"
+        Me.txtNewPwd.Size = New System.Drawing.Size(189, 31)
+        Me.txtNewPwd.TabIndex = 4
+        Me.txtNewPwd.Texts = ""
+        Me.txtNewPwd.UnderlinedStyle = False
+        '
+        'grpDetails
+        '
+        Me.grpDetails.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.grpDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.grpDetails.Location = New System.Drawing.Point(54, 201)
+        Me.grpDetails.Name = "grpDetails"
+        Me.grpDetails.Size = New System.Drawing.Size(393, 126)
+        Me.grpDetails.TabIndex = 3
+        Me.grpDetails.Text = "My Details"
+        '
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(180, 5)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(54, 5)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(125, 33)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(129, 33)
         Me.Guna2HtmlLabel1.TabIndex = 2
-        Me.Guna2HtmlLabel1.Text = "About Me"
+        Me.Guna2HtmlLabel1.Text = "My Profile"
         '
         'PictureBox1
         '
@@ -352,4 +433,8 @@ Partial Class Form2
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2GradientCircleButton1 As Guna.UI2.WinForms.Guna2GradientCircleButton
     Friend WithEvents GunaPolarAreaDataset1 As Guna.Charts.WinForms.GunaPolarAreaDataset
+    Friend WithEvents cmdChangePwd As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents txtConfPwd As Sipaa.Framework.STextBox
+    Friend WithEvents txtNewPwd As Sipaa.Framework.STextBox
+    Friend WithEvents grpDetails As Guna.UI2.WinForms.Guna2GroupBox
 End Class
