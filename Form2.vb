@@ -60,4 +60,27 @@ Public Class Form2
         End Try
 
     End Sub
+
+    Private Sub panSettings_VisibleChanged(sender As Object, e As EventArgs) Handles panSettings.VisibleChanged
+        lblEmail.Text = username
+        Try
+            con.Open()
+            Dim cmd As New OleDbCommand("SELECT [First] From Members Where Email=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
+            Dim i = cmd.ExecuteScalar
+
+            lblFirst.Text = i
+
+            cmd = New OleDbCommand("SELECT [Last] From Members Where Email=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
+            i = cmd.ExecuteScalar
+            lblLast.Text = i
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
 End Class

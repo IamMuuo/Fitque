@@ -24,6 +24,10 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.cmdClose = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.lblBanner = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -37,17 +41,59 @@ Partial Class Form2
         Me.Guna2ContainerControl1 = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.Guna2ContainerControl3 = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.panSettings = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.lblEmail = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.cmdChangePwd = New Guna.UI2.WinForms.Guna2Button()
         Me.txtConfPwd = New Sipaa.Framework.STextBox()
         Me.txtNewPwd = New Sipaa.Framework.STextBox()
         Me.grpDetails = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lblLast = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lblFirst = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lblBanner2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.GunaPolarAreaDataset1 = New Guna.Charts.WinForms.GunaPolarAreaDataset()
+        Me.panDiet = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.grpDiet = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.Guna2ContainerControl7 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.lblSupper = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.lblSupperBan = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2ContainerControl6 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.lblLunch = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.lblLunchBan = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2ContainerControl5 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.lblBreakfast = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.lblBreakBan = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.cmdBack = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Guna2ContainerControl8 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.grid = New Guna.UI2.WinForms.Guna2DataGridView()
+        Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.panHome.SuspendLayout()
         Me.panSettings.SuspendLayout()
+        Me.grpDetails.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panDiet.SuspendLayout()
+        Me.grpDiet.SuspendLayout()
+        Me.Guna2ContainerControl7.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl6.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl5.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl8.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2GroupBox1.SuspendLayout()
+        CType(Me.grid, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -187,10 +233,10 @@ Partial Class Form2
         Me.panHome.Controls.Add(Me.Guna2ContainerControl1)
         Me.panHome.Controls.Add(Me.Guna2ContainerControl3)
         Me.panHome.FillColor = System.Drawing.Color.Transparent
-        Me.panHome.Location = New System.Drawing.Point(68, 583)
+        Me.panHome.Location = New System.Drawing.Point(688, 61)
         Me.panHome.Name = "panHome"
         Me.panHome.Size = New System.Drawing.Size(710, 527)
-        Me.panHome.TabIndex = 12
+        Me.panHome.TabIndex = 13
         '
         'Guna2ContainerControl4
         '
@@ -255,18 +301,29 @@ Partial Class Form2
         'panSettings
         '
         Me.panSettings.BorderRadius = 12
+        Me.panSettings.Controls.Add(Me.lblEmail)
         Me.panSettings.Controls.Add(Me.cmdChangePwd)
         Me.panSettings.Controls.Add(Me.txtConfPwd)
         Me.panSettings.Controls.Add(Me.txtNewPwd)
         Me.panSettings.Controls.Add(Me.grpDetails)
-        Me.panSettings.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.panSettings.Controls.Add(Me.lblBanner2)
         Me.panSettings.Controls.Add(Me.PictureBox1)
         Me.panSettings.Controls.Add(Me.Guna2GradientCircleButton1)
         Me.panSettings.Location = New System.Drawing.Point(191, 88)
         Me.panSettings.Name = "panSettings"
         Me.panSettings.Size = New System.Drawing.Size(491, 451)
-        Me.panSettings.TabIndex = 13
+        Me.panSettings.TabIndex = 12
         Me.panSettings.Text = "Guna2ContainerControl5"
+        '
+        'lblEmail
+        '
+        Me.lblEmail.BackColor = System.Drawing.Color.Transparent
+        Me.lblEmail.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblEmail.Location = New System.Drawing.Point(172, 163)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(231, 32)
+        Me.lblEmail.TabIndex = 2
+        Me.lblEmail.Text = "someone@example.com"
         '
         'cmdChangePwd
         '
@@ -333,6 +390,8 @@ Partial Class Form2
         '
         'grpDetails
         '
+        Me.grpDetails.Controls.Add(Me.lblLast)
+        Me.grpDetails.Controls.Add(Me.lblFirst)
         Me.grpDetails.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.grpDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.grpDetails.Location = New System.Drawing.Point(54, 201)
@@ -341,23 +400,42 @@ Partial Class Form2
         Me.grpDetails.TabIndex = 3
         Me.grpDetails.Text = "My Details"
         '
-        'Guna2HtmlLabel1
+        'lblLast
         '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(54, 5)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(129, 33)
-        Me.Guna2HtmlLabel1.TabIndex = 2
-        Me.Guna2HtmlLabel1.Text = "My Profile"
+        Me.lblLast.BackColor = System.Drawing.Color.Transparent
+        Me.lblLast.ForeColor = System.Drawing.Color.Gray
+        Me.lblLast.Location = New System.Drawing.Point(251, 58)
+        Me.lblLast.Name = "lblLast"
+        Me.lblLast.Size = New System.Drawing.Size(98, 17)
+        Me.lblLast.TabIndex = 1
+        Me.lblLast.Text = "Guna2HtmlLabel2"
+        '
+        'lblFirst
+        '
+        Me.lblFirst.BackColor = System.Drawing.Color.Transparent
+        Me.lblFirst.Location = New System.Drawing.Point(31, 58)
+        Me.lblFirst.Name = "lblFirst"
+        Me.lblFirst.Size = New System.Drawing.Size(98, 17)
+        Me.lblFirst.TabIndex = 0
+        Me.lblFirst.Text = "Guna2HtmlLabel2"
+        '
+        'lblBanner2
+        '
+        Me.lblBanner2.BackColor = System.Drawing.Color.Transparent
+        Me.lblBanner2.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBanner2.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblBanner2.Location = New System.Drawing.Point(54, 5)
+        Me.lblBanner2.Name = "lblBanner2"
+        Me.lblBanner2.Size = New System.Drawing.Size(129, 33)
+        Me.lblBanner2.TabIndex = 2
+        Me.lblBanner2.Text = "My Profile"
         '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Enabled = False
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(205, 84)
+        Me.PictureBox1.Location = New System.Drawing.Point(205, 57)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -387,13 +465,397 @@ Partial Class Form2
         '
         Me.GunaPolarAreaDataset1.Label = "PolarArea1"
         '
+        'panDiet
+        '
+        Me.panDiet.BorderRadius = 12
+        Me.panDiet.Controls.Add(Me.grpDiet)
+        Me.panDiet.Controls.Add(Me.Guna2HtmlLabel4)
+        Me.panDiet.Controls.Add(Me.PictureBox2)
+        Me.panDiet.Controls.Add(Me.cmdBack)
+        Me.panDiet.Location = New System.Drawing.Point(174, 581)
+        Me.panDiet.Name = "panDiet"
+        Me.panDiet.Size = New System.Drawing.Size(529, 471)
+        Me.panDiet.TabIndex = 14
+        Me.panDiet.Text = "Guna2ContainerControl5"
+        '
+        'grpDiet
+        '
+        Me.grpDiet.Controls.Add(Me.Guna2ContainerControl7)
+        Me.grpDiet.Controls.Add(Me.Guna2ContainerControl6)
+        Me.grpDiet.Controls.Add(Me.Guna2ContainerControl5)
+        Me.grpDiet.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.grpDiet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.grpDiet.Location = New System.Drawing.Point(0, 163)
+        Me.grpDiet.Name = "grpDiet"
+        Me.grpDiet.Size = New System.Drawing.Size(538, 294)
+        Me.grpDiet.TabIndex = 3
+        Me.grpDiet.Text = "Reccomended Diet For Today"
+        '
+        'Guna2ContainerControl7
+        '
+        Me.Guna2ContainerControl7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ContainerControl7.BorderRadius = 10
+        Me.Guna2ContainerControl7.Controls.Add(Me.lblSupper)
+        Me.Guna2ContainerControl7.Controls.Add(Me.PictureBox5)
+        Me.Guna2ContainerControl7.Controls.Add(Me.lblSupperBan)
+        Me.Guna2ContainerControl7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2ContainerControl7.FillColor = System.Drawing.Color.DarkOliveGreen
+        Me.Guna2ContainerControl7.Location = New System.Drawing.Point(358, 51)
+        Me.Guna2ContainerControl7.Name = "Guna2ContainerControl7"
+        Me.Guna2ContainerControl7.ShadowDecoration.BorderRadius = 10
+        Me.Guna2ContainerControl7.ShadowDecoration.Depth = 20
+        Me.Guna2ContainerControl7.ShadowDecoration.Enabled = True
+        Me.Guna2ContainerControl7.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.Guna2ContainerControl7.Size = New System.Drawing.Size(157, 221)
+        Me.Guna2ContainerControl7.TabIndex = 7
+        '
+        'lblSupper
+        '
+        Me.lblSupper.BackColor = System.Drawing.Color.Transparent
+        Me.lblSupper.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblSupper.ForeColor = System.Drawing.Color.Black
+        Me.lblSupper.Location = New System.Drawing.Point(36, 172)
+        Me.lblSupper.Name = "lblSupper"
+        Me.lblSupper.Size = New System.Drawing.Size(104, 29)
+        Me.lblSupper.TabIndex = 5
+        Me.lblSupper.Text = "Ugali&Beef"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Enabled = False
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(51, 59)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(70, 66)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 4
+        Me.PictureBox5.TabStop = False
+        '
+        'lblSupperBan
+        '
+        Me.lblSupperBan.BackColor = System.Drawing.Color.Transparent
+        Me.lblSupperBan.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblSupperBan.ForeColor = System.Drawing.Color.Black
+        Me.lblSupperBan.Location = New System.Drawing.Point(55, 3)
+        Me.lblSupperBan.Name = "lblSupperBan"
+        Me.lblSupperBan.Size = New System.Drawing.Size(66, 29)
+        Me.lblSupperBan.TabIndex = 1
+        Me.lblSupperBan.Text = "Supper"
+        '
+        'Guna2ContainerControl6
+        '
+        Me.Guna2ContainerControl6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ContainerControl6.BorderRadius = 10
+        Me.Guna2ContainerControl6.Controls.Add(Me.lblLunch)
+        Me.Guna2ContainerControl6.Controls.Add(Me.PictureBox4)
+        Me.Guna2ContainerControl6.Controls.Add(Me.lblLunchBan)
+        Me.Guna2ContainerControl6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2ContainerControl6.FillColor = System.Drawing.Color.Chocolate
+        Me.Guna2ContainerControl6.Location = New System.Drawing.Point(181, 51)
+        Me.Guna2ContainerControl6.Name = "Guna2ContainerControl6"
+        Me.Guna2ContainerControl6.ShadowDecoration.BorderRadius = 10
+        Me.Guna2ContainerControl6.ShadowDecoration.Depth = 20
+        Me.Guna2ContainerControl6.ShadowDecoration.Enabled = True
+        Me.Guna2ContainerControl6.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.Guna2ContainerControl6.Size = New System.Drawing.Size(157, 221)
+        Me.Guna2ContainerControl6.TabIndex = 6
+        '
+        'lblLunch
+        '
+        Me.lblLunch.BackColor = System.Drawing.Color.Transparent
+        Me.lblLunch.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblLunch.ForeColor = System.Drawing.Color.Black
+        Me.lblLunch.Location = New System.Drawing.Point(3, 172)
+        Me.lblLunch.Name = "lblLunch"
+        Me.lblLunch.Size = New System.Drawing.Size(154, 29)
+        Me.lblLunch.TabIndex = 4
+        Me.lblLunch.Text = "Githeri + Water"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Enabled = False
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(44, 59)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(70, 66)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 3
+        Me.PictureBox4.TabStop = False
+        '
+        'lblLunchBan
+        '
+        Me.lblLunchBan.BackColor = System.Drawing.Color.Transparent
+        Me.lblLunchBan.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblLunchBan.ForeColor = System.Drawing.Color.Black
+        Me.lblLunchBan.Location = New System.Drawing.Point(44, 0)
+        Me.lblLunchBan.Name = "lblLunchBan"
+        Me.lblLunchBan.Size = New System.Drawing.Size(54, 29)
+        Me.lblLunchBan.TabIndex = 1
+        Me.lblLunchBan.Text = "Lunch"
+        '
+        'Guna2ContainerControl5
+        '
+        Me.Guna2ContainerControl5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ContainerControl5.BorderRadius = 10
+        Me.Guna2ContainerControl5.Controls.Add(Me.lblBreakfast)
+        Me.Guna2ContainerControl5.Controls.Add(Me.PictureBox3)
+        Me.Guna2ContainerControl5.Controls.Add(Me.lblBreakBan)
+        Me.Guna2ContainerControl5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2ContainerControl5.FillColor = System.Drawing.Color.Orange
+        Me.Guna2ContainerControl5.Location = New System.Drawing.Point(3, 51)
+        Me.Guna2ContainerControl5.Name = "Guna2ContainerControl5"
+        Me.Guna2ContainerControl5.ShadowDecoration.BorderRadius = 10
+        Me.Guna2ContainerControl5.ShadowDecoration.Depth = 20
+        Me.Guna2ContainerControl5.ShadowDecoration.Enabled = True
+        Me.Guna2ContainerControl5.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.Guna2ContainerControl5.Size = New System.Drawing.Size(157, 221)
+        Me.Guna2ContainerControl5.TabIndex = 5
+        '
+        'lblBreakfast
+        '
+        Me.lblBreakfast.BackColor = System.Drawing.Color.Transparent
+        Me.lblBreakfast.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBreakfast.ForeColor = System.Drawing.Color.Black
+        Me.lblBreakfast.Location = New System.Drawing.Point(30, 172)
+        Me.lblBreakfast.Name = "lblBreakfast"
+        Me.lblBreakfast.Size = New System.Drawing.Size(109, 29)
+        Me.lblBreakfast.TabIndex = 3
+        Me.lblBreakfast.Text = "Eggs + Milk"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Enabled = False
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(51, 59)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(70, 66)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 2
+        Me.PictureBox3.TabStop = False
+        '
+        'lblBreakBan
+        '
+        Me.lblBreakBan.BackColor = System.Drawing.Color.Transparent
+        Me.lblBreakBan.Font = New System.Drawing.Font("Comic Sans MS", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBreakBan.ForeColor = System.Drawing.Color.Black
+        Me.lblBreakBan.Location = New System.Drawing.Point(30, 3)
+        Me.lblBreakBan.Name = "lblBreakBan"
+        Me.lblBreakBan.Size = New System.Drawing.Size(97, 29)
+        Me.lblBreakBan.TabIndex = 0
+        Me.lblBreakBan.Text = "BreakFast"
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(54, 5)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(276, 33)
+        Me.Guna2HtmlLabel4.TabIndex = 2
+        Me.Guna2HtmlLabel4.Text = "Diet Recommendation"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Enabled = False
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(205, 57)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
+        '
+        'cmdBack
+        '
+        Me.cmdBack.Animated = True
+        Me.cmdBack.BackColor = System.Drawing.Color.Transparent
+        Me.cmdBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdBack.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdBack.FillColor = System.Drawing.Color.MediumVioletRed
+        Me.cmdBack.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdBack.ForeColor = System.Drawing.Color.White
+        Me.cmdBack.Image = CType(resources.GetObject("cmdBack.Image"), System.Drawing.Image)
+        Me.cmdBack.Location = New System.Drawing.Point(3, 3)
+        Me.cmdBack.Name = "cmdBack"
+        Me.cmdBack.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdBack.Size = New System.Drawing.Size(35, 35)
+        Me.cmdBack.TabIndex = 0
+        '
+        'Guna2ContainerControl8
+        '
+        Me.Guna2ContainerControl8.BorderRadius = 12
+        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2ComboBox2)
+        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2ComboBox1)
+        Me.Guna2ContainerControl8.Controls.Add(Me.PictureBox6)
+        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2GroupBox1)
+        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2HtmlLabel8)
+        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2GradientCircleButton2)
+        Me.Guna2ContainerControl8.Location = New System.Drawing.Point(801, 594)
+        Me.Guna2ContainerControl8.Name = "Guna2ContainerControl8"
+        Me.Guna2ContainerControl8.Size = New System.Drawing.Size(529, 471)
+        Me.Guna2ContainerControl8.TabIndex = 15
+        Me.Guna2ContainerControl8.Text = "Guna2ContainerControl5"
+        '
+        'Guna2ComboBox2
+        '
+        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox2.ItemHeight = 30
+        Me.Guna2ComboBox2.Location = New System.Drawing.Point(315, 160)
+        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
+        Me.Guna2ComboBox2.Size = New System.Drawing.Size(195, 36)
+        Me.Guna2ComboBox2.TabIndex = 6
+        '
+        'Guna2ComboBox1
+        '
+        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Guna2ComboBox1.ItemHeight = 30
+        Me.Guna2ComboBox1.Location = New System.Drawing.Point(19, 160)
+        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
+        Me.Guna2ComboBox1.Size = New System.Drawing.Size(195, 36)
+        Me.Guna2ComboBox1.TabIndex = 5
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Enabled = False
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(231, 44)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 4
+        Me.PictureBox6.TabStop = False
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.Controls.Add(Me.grid)
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(0, 315)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(529, 153)
+        Me.Guna2GroupBox1.TabIndex = 3
+        Me.Guna2GroupBox1.Text = "My Progress"
+        '
+        'grid
+        '
+        Me.grid.AllowUserToAddRows = False
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
+        Me.grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.grid.ColumnHeadersHeight = 4
+        Me.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid.DefaultCellStyle = DataGridViewCellStyle3
+        Me.grid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.grid.Location = New System.Drawing.Point(3, 41)
+        Me.grid.Name = "grid"
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.grid.RowHeadersVisible = False
+        Me.grid.RowTemplate.Height = 25
+        Me.grid.Size = New System.Drawing.Size(523, 112)
+        Me.grid.TabIndex = 0
+        Me.grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
+        Me.grid.ThemeStyle.AlternatingRowsStyle.Font = Nothing
+        Me.grid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty
+        Me.grid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty
+        Me.grid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty
+        Me.grid.ThemeStyle.BackColor = System.Drawing.Color.White
+        Me.grid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.grid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.grid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.grid.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.grid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White
+        Me.grid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
+        Me.grid.ThemeStyle.HeaderStyle.Height = 4
+        Me.grid.ThemeStyle.ReadOnly = False
+        Me.grid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
+        Me.grid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
+        Me.grid.ThemeStyle.RowsStyle.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.grid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.grid.ThemeStyle.RowsStyle.Height = 25
+        Me.grid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.grid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        '
+        'Guna2HtmlLabel8
+        '
+        Me.Guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel8.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel8.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.Guna2HtmlLabel8.Location = New System.Drawing.Point(54, 5)
+        Me.Guna2HtmlLabel8.Name = "Guna2HtmlLabel8"
+        Me.Guna2HtmlLabel8.Size = New System.Drawing.Size(122, 33)
+        Me.Guna2HtmlLabel8.TabIndex = 2
+        Me.Guna2HtmlLabel8.Text = "Work Out "
+        '
+        'Guna2GradientCircleButton2
+        '
+        Me.Guna2GradientCircleButton2.Animated = True
+        Me.Guna2GradientCircleButton2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GradientCircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton2.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientCircleButton2.FillColor = System.Drawing.Color.MediumVioletRed
+        Me.Guna2GradientCircleButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GradientCircleButton2.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton2.Image = CType(resources.GetObject("Guna2GradientCircleButton2.Image"), System.Drawing.Image)
+        Me.Guna2GradientCircleButton2.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2GradientCircleButton2.Name = "Guna2GradientCircleButton2"
+        Me.Guna2GradientCircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(35, 35)
+        Me.Guna2GradientCircleButton2.TabIndex = 0
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.ClientSize = New System.Drawing.Size(1410, 1100)
+        Me.Controls.Add(Me.Guna2ContainerControl8)
+        Me.Controls.Add(Me.panDiet)
         Me.Controls.Add(Me.panSettings)
         Me.Controls.Add(Me.panHome)
         Me.Controls.Add(Me.cmdSettings)
@@ -410,7 +872,27 @@ Partial Class Form2
         Me.panHome.ResumeLayout(False)
         Me.panSettings.ResumeLayout(False)
         Me.panSettings.PerformLayout()
+        Me.grpDetails.ResumeLayout(False)
+        Me.grpDetails.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panDiet.ResumeLayout(False)
+        Me.panDiet.PerformLayout()
+        Me.grpDiet.ResumeLayout(False)
+        Me.Guna2ContainerControl7.ResumeLayout(False)
+        Me.Guna2ContainerControl7.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl6.ResumeLayout(False)
+        Me.Guna2ContainerControl6.PerformLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl5.ResumeLayout(False)
+        Me.Guna2ContainerControl5.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl8.ResumeLayout(False)
+        Me.Guna2ContainerControl8.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2GroupBox1.ResumeLayout(False)
+        CType(Me.grid, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -429,7 +911,7 @@ Partial Class Form2
     Friend WithEvents Guna2ContainerControl1 As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents Guna2ContainerControl3 As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents panSettings As Guna.UI2.WinForms.Guna2ContainerControl
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblBanner2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2GradientCircleButton1 As Guna.UI2.WinForms.Guna2GradientCircleButton
     Friend WithEvents GunaPolarAreaDataset1 As Guna.Charts.WinForms.GunaPolarAreaDataset
@@ -437,4 +919,32 @@ Partial Class Form2
     Friend WithEvents txtConfPwd As Sipaa.Framework.STextBox
     Friend WithEvents txtNewPwd As Sipaa.Framework.STextBox
     Friend WithEvents grpDetails As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents lblEmail As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblLast As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblFirst As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents panDiet As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents grpDiet As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents cmdBack As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents Guna2ContainerControl5 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents Guna2ContainerControl7 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents Guna2ContainerControl6 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents lblSupper As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents lblSupperBan As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblLunch As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents lblLunchBan As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lblBreakfast As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents lblBreakBan As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2ContainerControl8 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
+    Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2GradientCircleButton2 As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents grid As Guna.UI2.WinForms.Guna2DataGridView
 End Class
