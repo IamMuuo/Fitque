@@ -1,4 +1,5 @@
 ﻿Imports System.Data.OleDb
+Imports Guna.Charts.WinForms
 
 Public Class Form2
     Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\source\repos\Fitque\DB\GYM.accdb")
@@ -83,4 +84,67 @@ Public Class Form2
         End Try
     End Sub
 
+    Private Sub conBreakfast_VisibleChanged(sender As Object, e As EventArgs) Handles conBreakfast.VisibleChanged
+        '' Update the reccomemded diet
+        Try
+            con.Open()
+            Dim cmd As New OleDbCommand("SELECT [Food] From Diet Where Category=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = "Breakfast"
+            Dim i = cmd.ExecuteScalar
+
+            lblBreakfast.Text = i
+
+            cmd = New OleDbCommand("SELECT [Food] From Diet Where Category=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = "Lunch"
+            i = cmd.ExecuteScalar
+            lblLunch.Text = i
+
+            cmd = New OleDbCommand("SELECT [Food] From Diet Where Category=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = "Supper"
+            i = cmd.ExecuteScalar
+            lblSupper.Text = i
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
+    Private Sub workouts_VisibleChanged(sender As Object, e As EventArgs) Handles workouts.VisibleChanged
+        con.Open()
+        Dim cmd As New OleDbCommand("Select [Workout_Name], [Workout_Type], [When] FROM WorkoutSummary WHERE username=? ORDER BY [When] DESC", con)
+        cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
+
+        Dim da = New OleDbDataAdapter(cmd)
+        Dim t = New DataTable
+        da.Fill(t)
+        grid.DataSource = t
+
+
+        con.Close()
+
+    End Sub
+
+    Private Sub cmbWorkoutType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbWorkoutType.SelectedIndexChanged
+        cmbWorkoutName.Items.Clear()
+        cmbWorkoutName.Items.Add("Select Workout")
+
+        Try
+            con.Open()
+            Dim cmd As New OleDbCommand("Select [Workout_Name] FROM Workout WHERE Workout_Type=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = cmbWorkoutType.SelectedItem.ToString
+
+            Dim dr As OleDbDataReader = cmd.ExecuteReader
+
+            While dr.Read
+                cmbWorkoutName.Items.Add(dr(0).ToString)
+            End While
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
 End Class

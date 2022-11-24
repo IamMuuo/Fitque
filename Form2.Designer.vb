@@ -51,27 +51,26 @@ Partial Class Form2
         Me.lblBanner2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.GunaPolarAreaDataset1 = New Guna.Charts.WinForms.GunaPolarAreaDataset()
         Me.panDiet = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.grpDiet = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.Guna2ContainerControl7 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.conSupper = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.lblSupper = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.lblSupperBan = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2ContainerControl6 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.conLunch = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.lblLunch = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.lblLunchBan = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2ContainerControl5 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.conBreakfast = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.lblBreakfast = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.lblBreakBan = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.cmdBack = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.Guna2ContainerControl8 = New Guna.UI2.WinForms.Guna2ContainerControl()
-        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.workouts = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.cmbWorkoutName = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.cmbWorkoutType = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.grid = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -83,14 +82,14 @@ Partial Class Form2
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panDiet.SuspendLayout()
         Me.grpDiet.SuspendLayout()
-        Me.Guna2ContainerControl7.SuspendLayout()
+        Me.conSupper.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2ContainerControl6.SuspendLayout()
+        Me.conLunch.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2ContainerControl5.SuspendLayout()
+        Me.conBreakfast.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2ContainerControl8.SuspendLayout()
+        Me.workouts.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.grid, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -461,10 +460,6 @@ Partial Class Form2
         Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(35, 35)
         Me.Guna2GradientCircleButton1.TabIndex = 0
         '
-        'GunaPolarAreaDataset1
-        '
-        Me.GunaPolarAreaDataset1.Label = "PolarArea1"
-        '
         'panDiet
         '
         Me.panDiet.BorderRadius = 12
@@ -480,9 +475,9 @@ Partial Class Form2
         '
         'grpDiet
         '
-        Me.grpDiet.Controls.Add(Me.Guna2ContainerControl7)
-        Me.grpDiet.Controls.Add(Me.Guna2ContainerControl6)
-        Me.grpDiet.Controls.Add(Me.Guna2ContainerControl5)
+        Me.grpDiet.Controls.Add(Me.conSupper)
+        Me.grpDiet.Controls.Add(Me.conLunch)
+        Me.grpDiet.Controls.Add(Me.conBreakfast)
         Me.grpDiet.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.grpDiet.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.grpDiet.Location = New System.Drawing.Point(0, 163)
@@ -491,23 +486,23 @@ Partial Class Form2
         Me.grpDiet.TabIndex = 3
         Me.grpDiet.Text = "Reccomended Diet For Today"
         '
-        'Guna2ContainerControl7
+        'conSupper
         '
-        Me.Guna2ContainerControl7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ContainerControl7.BorderRadius = 10
-        Me.Guna2ContainerControl7.Controls.Add(Me.lblSupper)
-        Me.Guna2ContainerControl7.Controls.Add(Me.PictureBox5)
-        Me.Guna2ContainerControl7.Controls.Add(Me.lblSupperBan)
-        Me.Guna2ContainerControl7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2ContainerControl7.FillColor = System.Drawing.Color.DarkOliveGreen
-        Me.Guna2ContainerControl7.Location = New System.Drawing.Point(358, 51)
-        Me.Guna2ContainerControl7.Name = "Guna2ContainerControl7"
-        Me.Guna2ContainerControl7.ShadowDecoration.BorderRadius = 10
-        Me.Guna2ContainerControl7.ShadowDecoration.Depth = 20
-        Me.Guna2ContainerControl7.ShadowDecoration.Enabled = True
-        Me.Guna2ContainerControl7.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
-        Me.Guna2ContainerControl7.Size = New System.Drawing.Size(157, 221)
-        Me.Guna2ContainerControl7.TabIndex = 7
+        Me.conSupper.BackColor = System.Drawing.Color.Transparent
+        Me.conSupper.BorderRadius = 10
+        Me.conSupper.Controls.Add(Me.lblSupper)
+        Me.conSupper.Controls.Add(Me.PictureBox5)
+        Me.conSupper.Controls.Add(Me.lblSupperBan)
+        Me.conSupper.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.conSupper.FillColor = System.Drawing.Color.DarkOliveGreen
+        Me.conSupper.Location = New System.Drawing.Point(358, 51)
+        Me.conSupper.Name = "conSupper"
+        Me.conSupper.ShadowDecoration.BorderRadius = 10
+        Me.conSupper.ShadowDecoration.Depth = 20
+        Me.conSupper.ShadowDecoration.Enabled = True
+        Me.conSupper.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.conSupper.Size = New System.Drawing.Size(157, 221)
+        Me.conSupper.TabIndex = 7
         '
         'lblSupper
         '
@@ -543,23 +538,23 @@ Partial Class Form2
         Me.lblSupperBan.TabIndex = 1
         Me.lblSupperBan.Text = "Supper"
         '
-        'Guna2ContainerControl6
+        'conLunch
         '
-        Me.Guna2ContainerControl6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ContainerControl6.BorderRadius = 10
-        Me.Guna2ContainerControl6.Controls.Add(Me.lblLunch)
-        Me.Guna2ContainerControl6.Controls.Add(Me.PictureBox4)
-        Me.Guna2ContainerControl6.Controls.Add(Me.lblLunchBan)
-        Me.Guna2ContainerControl6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2ContainerControl6.FillColor = System.Drawing.Color.Chocolate
-        Me.Guna2ContainerControl6.Location = New System.Drawing.Point(181, 51)
-        Me.Guna2ContainerControl6.Name = "Guna2ContainerControl6"
-        Me.Guna2ContainerControl6.ShadowDecoration.BorderRadius = 10
-        Me.Guna2ContainerControl6.ShadowDecoration.Depth = 20
-        Me.Guna2ContainerControl6.ShadowDecoration.Enabled = True
-        Me.Guna2ContainerControl6.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
-        Me.Guna2ContainerControl6.Size = New System.Drawing.Size(157, 221)
-        Me.Guna2ContainerControl6.TabIndex = 6
+        Me.conLunch.BackColor = System.Drawing.Color.Transparent
+        Me.conLunch.BorderRadius = 10
+        Me.conLunch.Controls.Add(Me.lblLunch)
+        Me.conLunch.Controls.Add(Me.PictureBox4)
+        Me.conLunch.Controls.Add(Me.lblLunchBan)
+        Me.conLunch.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.conLunch.FillColor = System.Drawing.Color.Chocolate
+        Me.conLunch.Location = New System.Drawing.Point(181, 51)
+        Me.conLunch.Name = "conLunch"
+        Me.conLunch.ShadowDecoration.BorderRadius = 10
+        Me.conLunch.ShadowDecoration.Depth = 20
+        Me.conLunch.ShadowDecoration.Enabled = True
+        Me.conLunch.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.conLunch.Size = New System.Drawing.Size(157, 221)
+        Me.conLunch.TabIndex = 6
         '
         'lblLunch
         '
@@ -595,23 +590,23 @@ Partial Class Form2
         Me.lblLunchBan.TabIndex = 1
         Me.lblLunchBan.Text = "Lunch"
         '
-        'Guna2ContainerControl5
+        'conBreakfast
         '
-        Me.Guna2ContainerControl5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ContainerControl5.BorderRadius = 10
-        Me.Guna2ContainerControl5.Controls.Add(Me.lblBreakfast)
-        Me.Guna2ContainerControl5.Controls.Add(Me.PictureBox3)
-        Me.Guna2ContainerControl5.Controls.Add(Me.lblBreakBan)
-        Me.Guna2ContainerControl5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2ContainerControl5.FillColor = System.Drawing.Color.Orange
-        Me.Guna2ContainerControl5.Location = New System.Drawing.Point(3, 51)
-        Me.Guna2ContainerControl5.Name = "Guna2ContainerControl5"
-        Me.Guna2ContainerControl5.ShadowDecoration.BorderRadius = 10
-        Me.Guna2ContainerControl5.ShadowDecoration.Depth = 20
-        Me.Guna2ContainerControl5.ShadowDecoration.Enabled = True
-        Me.Guna2ContainerControl5.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
-        Me.Guna2ContainerControl5.Size = New System.Drawing.Size(157, 221)
-        Me.Guna2ContainerControl5.TabIndex = 5
+        Me.conBreakfast.BackColor = System.Drawing.Color.Transparent
+        Me.conBreakfast.BorderRadius = 10
+        Me.conBreakfast.Controls.Add(Me.lblBreakfast)
+        Me.conBreakfast.Controls.Add(Me.PictureBox3)
+        Me.conBreakfast.Controls.Add(Me.lblBreakBan)
+        Me.conBreakfast.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.conBreakfast.FillColor = System.Drawing.Color.Orange
+        Me.conBreakfast.Location = New System.Drawing.Point(3, 51)
+        Me.conBreakfast.Name = "conBreakfast"
+        Me.conBreakfast.ShadowDecoration.BorderRadius = 10
+        Me.conBreakfast.ShadowDecoration.Depth = 20
+        Me.conBreakfast.ShadowDecoration.Enabled = True
+        Me.conBreakfast.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.conBreakfast.Size = New System.Drawing.Size(157, 221)
+        Me.conBreakfast.TabIndex = 5
         '
         'lblBreakfast
         '
@@ -689,50 +684,54 @@ Partial Class Form2
         Me.cmdBack.Size = New System.Drawing.Size(35, 35)
         Me.cmdBack.TabIndex = 0
         '
-        'Guna2ContainerControl8
+        'workouts
         '
-        Me.Guna2ContainerControl8.BorderRadius = 12
-        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2ComboBox2)
-        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2ComboBox1)
-        Me.Guna2ContainerControl8.Controls.Add(Me.PictureBox6)
-        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2GroupBox1)
-        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2HtmlLabel8)
-        Me.Guna2ContainerControl8.Controls.Add(Me.Guna2GradientCircleButton2)
-        Me.Guna2ContainerControl8.Location = New System.Drawing.Point(801, 594)
-        Me.Guna2ContainerControl8.Name = "Guna2ContainerControl8"
-        Me.Guna2ContainerControl8.Size = New System.Drawing.Size(529, 471)
-        Me.Guna2ContainerControl8.TabIndex = 15
-        Me.Guna2ContainerControl8.Text = "Guna2ContainerControl5"
+        Me.workouts.BorderRadius = 12
+        Me.workouts.Controls.Add(Me.cmbWorkoutName)
+        Me.workouts.Controls.Add(Me.cmbWorkoutType)
+        Me.workouts.Controls.Add(Me.PictureBox6)
+        Me.workouts.Controls.Add(Me.Guna2GroupBox1)
+        Me.workouts.Controls.Add(Me.Guna2HtmlLabel8)
+        Me.workouts.Controls.Add(Me.Guna2GradientCircleButton2)
+        Me.workouts.Location = New System.Drawing.Point(801, 594)
+        Me.workouts.Name = "workouts"
+        Me.workouts.Size = New System.Drawing.Size(529, 471)
+        Me.workouts.TabIndex = 15
+        Me.workouts.Text = "Guna2ContainerControl5"
         '
-        'Guna2ComboBox2
+        'cmbWorkoutName
         '
-        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox2.ItemHeight = 30
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(315, 160)
-        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Me.Guna2ComboBox2.Size = New System.Drawing.Size(195, 36)
-        Me.Guna2ComboBox2.TabIndex = 6
+        Me.cmbWorkoutName.BackColor = System.Drawing.Color.Transparent
+        Me.cmbWorkoutName.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbWorkoutName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbWorkoutName.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbWorkoutName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbWorkoutName.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbWorkoutName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmbWorkoutName.ItemHeight = 30
+        Me.cmbWorkoutName.Items.AddRange(New Object() {"Select Workout"})
+        Me.cmbWorkoutName.Location = New System.Drawing.Point(231, 160)
+        Me.cmbWorkoutName.Name = "cmbWorkoutName"
+        Me.cmbWorkoutName.Size = New System.Drawing.Size(279, 36)
+        Me.cmbWorkoutName.StartIndex = 0
+        Me.cmbWorkoutName.TabIndex = 6
         '
-        'Guna2ComboBox1
+        'cmbWorkoutType
         '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(19, 160)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(195, 36)
-        Me.Guna2ComboBox1.TabIndex = 5
+        Me.cmbWorkoutType.BackColor = System.Drawing.Color.Transparent
+        Me.cmbWorkoutType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cmbWorkoutType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbWorkoutType.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbWorkoutType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmbWorkoutType.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmbWorkoutType.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.cmbWorkoutType.ItemHeight = 30
+        Me.cmbWorkoutType.Items.AddRange(New Object() {"Select Workout Type", "Chest", "Hands", "Full"})
+        Me.cmbWorkoutType.Location = New System.Drawing.Point(19, 160)
+        Me.cmbWorkoutType.Name = "cmbWorkoutType"
+        Me.cmbWorkoutType.Size = New System.Drawing.Size(195, 36)
+        Me.cmbWorkoutType.StartIndex = 0
+        Me.cmbWorkoutType.TabIndex = 5
         '
         'PictureBox6
         '
@@ -748,6 +747,7 @@ Partial Class Form2
         '
         'Guna2GroupBox1
         '
+        Me.Guna2GroupBox1.AutoScroll = True
         Me.Guna2GroupBox1.Controls.Add(Me.grid)
         Me.Guna2GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
@@ -854,7 +854,7 @@ Partial Class Form2
         Me.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1410, 1100)
-        Me.Controls.Add(Me.Guna2ContainerControl8)
+        Me.Controls.Add(Me.workouts)
         Me.Controls.Add(Me.panDiet)
         Me.Controls.Add(Me.panSettings)
         Me.Controls.Add(Me.panHome)
@@ -878,18 +878,18 @@ Partial Class Form2
         Me.panDiet.ResumeLayout(False)
         Me.panDiet.PerformLayout()
         Me.grpDiet.ResumeLayout(False)
-        Me.Guna2ContainerControl7.ResumeLayout(False)
-        Me.Guna2ContainerControl7.PerformLayout()
+        Me.conSupper.ResumeLayout(False)
+        Me.conSupper.PerformLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2ContainerControl6.ResumeLayout(False)
-        Me.Guna2ContainerControl6.PerformLayout()
+        Me.conLunch.ResumeLayout(False)
+        Me.conLunch.PerformLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2ContainerControl5.ResumeLayout(False)
-        Me.Guna2ContainerControl5.PerformLayout()
+        Me.conBreakfast.ResumeLayout(False)
+        Me.conBreakfast.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2ContainerControl8.ResumeLayout(False)
-        Me.Guna2ContainerControl8.PerformLayout()
+        Me.workouts.ResumeLayout(False)
+        Me.workouts.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GroupBox1.ResumeLayout(False)
         CType(Me.grid, System.ComponentModel.ISupportInitialize).EndInit()
@@ -914,7 +914,6 @@ Partial Class Form2
     Friend WithEvents lblBanner2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Guna2GradientCircleButton1 As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents GunaPolarAreaDataset1 As Guna.Charts.WinForms.GunaPolarAreaDataset
     Friend WithEvents cmdChangePwd As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents txtConfPwd As Sipaa.Framework.STextBox
     Friend WithEvents txtNewPwd As Sipaa.Framework.STextBox
@@ -927,9 +926,9 @@ Partial Class Form2
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents cmdBack As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents Guna2ContainerControl5 As Guna.UI2.WinForms.Guna2ContainerControl
-    Friend WithEvents Guna2ContainerControl7 As Guna.UI2.WinForms.Guna2ContainerControl
-    Friend WithEvents Guna2ContainerControl6 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents conBreakfast As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents conSupper As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents conLunch As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents lblSupper As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents lblSupperBan As Guna.UI2.WinForms.Guna2HtmlLabel
@@ -939,12 +938,12 @@ Partial Class Form2
     Friend WithEvents lblBreakfast As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents lblBreakBan As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2ContainerControl8 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents workouts As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents Guna2GroupBox1 As Guna.UI2.WinForms.Guna2GroupBox
     Friend WithEvents Guna2HtmlLabel8 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2GradientCircleButton2 As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents cmbWorkoutName As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents cmbWorkoutType As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents grid As Guna.UI2.WinForms.Guna2DataGridView
 End Class
