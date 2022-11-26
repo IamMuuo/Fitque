@@ -1,7 +1,10 @@
 ﻿Imports System.Data.OleDb
+Imports System.Reflection.Emit
+Imports System.Threading
 Imports Guna.Charts.WinForms
 
 Public Class Form2
+    Dim second As Integer
     Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\source\repos\Fitque\DB\GYM.accdb")
     Public Shared username As String
     Private Sub CmdClose_Click(sender As Object, e As EventArgs) Handles cmdClose.Click
@@ -9,19 +12,15 @@ Public Class Form2
         Me.Close()
     End Sub
 
-    Private Sub cmdDashBoard_Click(sender As Object, e As EventArgs) Handles cmdDashBoard.Click
+    Private Sub cmdDashBoard_Click(sender As Object, e As EventArgs)
         panHome.Visible = True
     End Sub
 
-    Private Sub cmdSettings_Click(sender As Object, e As EventArgs) Handles cmdSettings.Click
+    Private Sub cmdSettings_Click(sender As Object, e As EventArgs)
         panSettings.Visible = True
         panHome.Visible = True
     End Sub
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
-        panHome.Visible = True
-        panSettings.Visible = False
-    End Sub
 
     Private Sub Guna2GradientCircleButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton1.Click
         panSettings.Visible = False
@@ -112,6 +111,9 @@ Public Class Form2
     End Sub
 
     Private Sub workouts_VisibleChanged(sender As Object, e As EventArgs) Handles workouts.VisibleChanged
+        workoutDescription.Visible = False
+        cmdStartWorkout.Visible = False
+        progressTimer.Visible = False
         con.Open()
         Dim cmd As New OleDbCommand("Select [Workout_Name], [Workout_Type], [When] FROM WorkoutSummary WHERE username=? ORDER BY [When] DESC", con)
         cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
@@ -146,5 +148,97 @@ Public Class Form2
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Private Sub cmbWorkoutName_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbWorkoutName.SelectedIndexChanged
+        workoutDescription.Visible = True
+        Try
+            con.Open()
+            Dim cmd As New OleDbCommand("Select [Description] FROM Workout WHERE Workout_Name=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = cmbWorkoutName.SelectedItem
+
+            Dim dr As OleDbDataReader = cmd.ExecuteReader
+
+            While dr.Read
+                workoutDescription.Text = dr(0)
+            End While
+
+            cmdStartWorkout.Visible = True
+
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
+    Private Sub cmdStartWorkout_Click(sender As Object, e As EventArgs) Handles cmdStartWorkout.Click
+        progressTimer.Visible = True
+        Timer1.Enabled = True
+        Timer1.Start()
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        If progressTimer.Value >= 100 Then
+            Timer1.Stop()
+            Try
+                con.Open()
+                Dim cmd As New OleDbCommand("SELECT Workout_ID FROM Workout WHERE Workout_Name=?", con)
+                cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = cmbWorkoutName
+
+                Dim i = cmd.ExecuteScalar
+
+                cmd = New OleDbCommand("INSERT INTO Workouts ([Username], [Workout]), VALUES (?,?)", con)
+                cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
+                cmd.Parameters.AddWithValue("@2", OleDb.OleDbType.VarChar).Value = i
+
+
+
+
+                i = Convert.ToInt32(cmd.ExecuteNonQuery())
+
+                If i > 0 Then
+                    MsgBox("Workout logged successfully", MsgBoxStyle.Information, Title:="Success")
+                Else
+                    MsgBox("Something Went Wrong", MsgBoxStyle.Critical, "Internal Error")
+                End If
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            Finally
+                con.Close()
+            End Try
+            Return
+        End If
+
+        progressTimer.Value += 1
+    End Sub
+    Private Sub panHome_VisibleChanged(sender As Object, e As EventArgs) Handles panHome.VisibleChanged
+        Try
+            con.Open()
+            Dim cmd As New OleDbCommand("SELECT COUNT(*) FROM WorkoutSummary WHERE  username=?", con)
+            cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
+
+            Dim i = Convert.ToInt32(cmd.ExecuteScalar())
+
+            If i > 0 Then
+                progressWorkout.Value = (i) * 10
+            Else
+                MsgBox("Something Went Wrong", MsgBoxStyle.Critical, "Internal Error")
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        Finally
+            con.Close()
+        End Try
+    End Sub
+
+    Private Sub cmdRefresh_Click(sender As Object, e As EventArgs) Handles cmdRefresh.Click
+        MsgBox("Refreshed successfully", MsgBoxStyle.Information, "Fitque")
+    End Sub
+
+    Private Sub cmdDiet_Click(sender As Object, e As EventArgs)
+        panHome.Visible = False
+        panDiet.Visible = True
     End Sub
 End Class

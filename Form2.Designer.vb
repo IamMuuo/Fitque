@@ -31,26 +31,30 @@ Partial Class Form2
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.cmdClose = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.lblBanner = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.cmdDashBoard = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.cmdWorkOut = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.cmdDiet = New Guna.UI2.WinForms.Guna2GradientCircleButton()
-        Me.cmdSettings = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.panHome = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.Guna2ContainerControl4 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.lblBreakBanner = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ContainerControl2 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.lblWorkoutsToday = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ContainerControl1 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ContainerControl3 = New Guna.UI2.WinForms.Guna2ContainerControl()
-        Me.panSettings = New Guna.UI2.WinForms.Guna2ContainerControl()
-        Me.lblEmail = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.cmdChangePwd = New Guna.UI2.WinForms.Guna2Button()
-        Me.txtConfPwd = New Sipaa.Framework.STextBox()
-        Me.txtNewPwd = New Sipaa.Framework.STextBox()
-        Me.grpDetails = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lblLast = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.lblFirst = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.lblBanner2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Guna2ContainerControl7 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.progressWorkout = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2ContainerControl5 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.cmdToSettings = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.cmdToMeals = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.cmdToWorkout = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2ContainerControl6 = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.Guna2GradientCircleButton4 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.cmdRefresh = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.panDiet = New Guna.UI2.WinForms.Guna2ContainerControl()
         Me.grpDiet = New Guna.UI2.WinForms.Guna2GroupBox()
         Me.conSupper = New Guna.UI2.WinForms.Guna2ContainerControl()
@@ -68,7 +72,21 @@ Partial Class Form2
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.cmdBack = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.panSettings = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.lblEmail = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.cmdChangePwd = New Guna.UI2.WinForms.Guna2Button()
+        Me.txtConfPwd = New Sipaa.Framework.STextBox()
+        Me.txtNewPwd = New Sipaa.Framework.STextBox()
+        Me.grpDetails = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.lblLast = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lblFirst = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lblBanner2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Guna2GradientCircleButton1 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.workouts = New Guna.UI2.WinForms.Guna2ContainerControl()
+        Me.progressTimer = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.cmdStartWorkout = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.workoutDescription = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.cmbWorkoutName = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.cmbWorkoutType = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
@@ -76,10 +94,23 @@ Partial Class Form2
         Me.grid = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Guna2TabControl1 = New Guna.UI2.WinForms.Guna2TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.panHome.SuspendLayout()
-        Me.panSettings.SuspendLayout()
-        Me.grpDetails.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl4.SuspendLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl2.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl1.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2ContainerControl3.SuspendLayout()
+        Me.Guna2ContainerControl7.SuspendLayout()
+        Me.Guna2ContainerControl5.SuspendLayout()
+        Me.Guna2ContainerControl6.SuspendLayout()
         Me.panDiet.SuspendLayout()
         Me.grpDiet.SuspendLayout()
         Me.conSupper.SuspendLayout()
@@ -89,10 +120,18 @@ Partial Class Form2
         Me.conBreakfast.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.panSettings.SuspendLayout()
+        Me.grpDetails.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.workouts.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.grid, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Guna2TabControl1.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
+        Me.TabPage2.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -132,115 +171,26 @@ Partial Class Form2
         Me.lblBanner.TabIndex = 6
         Me.lblBanner.Text = "Fitque"
         '
-        'cmdDashBoard
-        '
-        Me.cmdDashBoard.Animated = True
-        Me.cmdDashBoard.BackColor = System.Drawing.Color.Transparent
-        Me.cmdDashBoard.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdDashBoard.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.cmdDashBoard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.cmdDashBoard.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdDashBoard.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdDashBoard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.cmdDashBoard.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmdDashBoard.ForeColor = System.Drawing.Color.White
-        Me.cmdDashBoard.HoverState.FillColor = System.Drawing.Color.CadetBlue
-        Me.cmdDashBoard.HoverState.FillColor2 = System.Drawing.Color.Firebrick
-        Me.cmdDashBoard.Image = CType(resources.GetObject("cmdDashBoard.Image"), System.Drawing.Image)
-        Me.cmdDashBoard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.cmdDashBoard.ImageSize = New System.Drawing.Size(50, 50)
-        Me.cmdDashBoard.Location = New System.Drawing.Point(12, 172)
-        Me.cmdDashBoard.Name = "cmdDashBoard"
-        Me.cmdDashBoard.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.cmdDashBoard.Size = New System.Drawing.Size(60, 60)
-        Me.cmdDashBoard.TabIndex = 8
-        '
-        'cmdWorkOut
-        '
-        Me.cmdWorkOut.Animated = True
-        Me.cmdWorkOut.BackColor = System.Drawing.Color.Transparent
-        Me.cmdWorkOut.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdWorkOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.cmdWorkOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.cmdWorkOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdWorkOut.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdWorkOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.cmdWorkOut.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmdWorkOut.ForeColor = System.Drawing.Color.White
-        Me.cmdWorkOut.HoverState.FillColor = System.Drawing.Color.CadetBlue
-        Me.cmdWorkOut.HoverState.FillColor2 = System.Drawing.Color.Firebrick
-        Me.cmdWorkOut.Image = CType(resources.GetObject("cmdWorkOut.Image"), System.Drawing.Image)
-        Me.cmdWorkOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.cmdWorkOut.ImageSize = New System.Drawing.Size(50, 50)
-        Me.cmdWorkOut.Location = New System.Drawing.Point(12, 238)
-        Me.cmdWorkOut.Name = "cmdWorkOut"
-        Me.cmdWorkOut.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.cmdWorkOut.Size = New System.Drawing.Size(60, 60)
-        Me.cmdWorkOut.TabIndex = 9
-        '
-        'cmdDiet
-        '
-        Me.cmdDiet.Animated = True
-        Me.cmdDiet.BackColor = System.Drawing.Color.Transparent
-        Me.cmdDiet.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdDiet.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.cmdDiet.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.cmdDiet.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdDiet.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdDiet.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.cmdDiet.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmdDiet.ForeColor = System.Drawing.Color.White
-        Me.cmdDiet.HoverState.FillColor = System.Drawing.Color.CadetBlue
-        Me.cmdDiet.HoverState.FillColor2 = System.Drawing.Color.Firebrick
-        Me.cmdDiet.Image = CType(resources.GetObject("cmdDiet.Image"), System.Drawing.Image)
-        Me.cmdDiet.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.cmdDiet.ImageSize = New System.Drawing.Size(50, 50)
-        Me.cmdDiet.Location = New System.Drawing.Point(12, 304)
-        Me.cmdDiet.Name = "cmdDiet"
-        Me.cmdDiet.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.cmdDiet.Size = New System.Drawing.Size(60, 60)
-        Me.cmdDiet.TabIndex = 10
-        '
-        'cmdSettings
-        '
-        Me.cmdSettings.Animated = True
-        Me.cmdSettings.BackColor = System.Drawing.Color.Transparent
-        Me.cmdSettings.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdSettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.cmdSettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.cmdSettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdSettings.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdSettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.cmdSettings.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmdSettings.ForeColor = System.Drawing.Color.White
-        Me.cmdSettings.HoverState.FillColor = System.Drawing.Color.CadetBlue
-        Me.cmdSettings.HoverState.FillColor2 = System.Drawing.Color.Firebrick
-        Me.cmdSettings.Image = CType(resources.GetObject("cmdSettings.Image"), System.Drawing.Image)
-        Me.cmdSettings.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.cmdSettings.ImageSize = New System.Drawing.Size(50, 50)
-        Me.cmdSettings.Location = New System.Drawing.Point(12, 370)
-        Me.cmdSettings.Name = "cmdSettings"
-        Me.cmdSettings.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.cmdSettings.Size = New System.Drawing.Size(60, 60)
-        Me.cmdSettings.TabIndex = 11
-        '
         'panHome
         '
-        Me.panHome.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.panHome.BackColor = System.Drawing.Color.Transparent
         Me.panHome.Controls.Add(Me.Guna2ContainerControl4)
         Me.panHome.Controls.Add(Me.Guna2ContainerControl2)
         Me.panHome.Controls.Add(Me.Guna2ContainerControl1)
         Me.panHome.Controls.Add(Me.Guna2ContainerControl3)
         Me.panHome.FillColor = System.Drawing.Color.Transparent
-        Me.panHome.Location = New System.Drawing.Point(688, 61)
+        Me.panHome.Location = New System.Drawing.Point(-20, 6)
         Me.panHome.Name = "panHome"
-        Me.panHome.Size = New System.Drawing.Size(710, 527)
+        Me.panHome.Size = New System.Drawing.Size(701, 527)
         Me.panHome.TabIndex = 13
         '
         'Guna2ContainerControl4
         '
         Me.Guna2ContainerControl4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ContainerControl4.BorderRadius = 10
+        Me.Guna2ContainerControl4.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Guna2ContainerControl4.Controls.Add(Me.PictureBox7)
+        Me.Guna2ContainerControl4.Controls.Add(Me.lblBreakBanner)
         Me.Guna2ContainerControl4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2ContainerControl4.FillColor = System.Drawing.Color.Coral
         Me.Guna2ContainerControl4.Location = New System.Drawing.Point(485, 268)
@@ -252,10 +202,46 @@ Partial Class Form2
         Me.Guna2ContainerControl4.Size = New System.Drawing.Size(182, 241)
         Me.Guna2ContainerControl4.TabIndex = 6
         '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(38, 181)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(128, 30)
+        Me.Guna2HtmlLabel2.TabIndex = 4
+        Me.Guna2HtmlLabel2.Text = "Eggs + Milk"
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Enabled = False
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(41, 64)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(92, 92)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 3
+        Me.PictureBox7.TabStop = False
+        '
+        'lblBreakBanner
+        '
+        Me.lblBreakBanner.BackColor = System.Drawing.Color.Transparent
+        Me.lblBreakBanner.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBreakBanner.ForeColor = System.Drawing.Color.White
+        Me.lblBreakBanner.Location = New System.Drawing.Point(41, 6)
+        Me.lblBreakBanner.Name = "lblBreakBanner"
+        Me.lblBreakBanner.Size = New System.Drawing.Size(106, 30)
+        Me.lblBreakBanner.TabIndex = 1
+        Me.lblBreakBanner.Text = "BreakFast"
+        '
         'Guna2ContainerControl2
         '
         Me.Guna2ContainerControl2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ContainerControl2.BorderRadius = 10
+        Me.Guna2ContainerControl2.Controls.Add(Me.PictureBox8)
+        Me.Guna2ContainerControl2.Controls.Add(Me.lblWorkoutsToday)
         Me.Guna2ContainerControl2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2ContainerControl2.FillColor = System.Drawing.Color.CadetBlue
         Me.Guna2ContainerControl2.Location = New System.Drawing.Point(271, 268)
@@ -267,10 +253,35 @@ Partial Class Form2
         Me.Guna2ContainerControl2.Size = New System.Drawing.Size(182, 241)
         Me.Guna2ContainerControl2.TabIndex = 5
         '
+        'PictureBox8
+        '
+        Me.PictureBox8.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox8.Enabled = False
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(43, 64)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(92, 92)
+        Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox8.TabIndex = 5
+        Me.PictureBox8.TabStop = False
+        '
+        'lblWorkoutsToday
+        '
+        Me.lblWorkoutsToday.BackColor = System.Drawing.Color.Transparent
+        Me.lblWorkoutsToday.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblWorkoutsToday.ForeColor = System.Drawing.Color.White
+        Me.lblWorkoutsToday.Location = New System.Drawing.Point(3, 5)
+        Me.lblWorkoutsToday.Name = "lblWorkoutsToday"
+        Me.lblWorkoutsToday.Size = New System.Drawing.Size(170, 30)
+        Me.lblWorkoutsToday.TabIndex = 2
+        Me.lblWorkoutsToday.Text = "Workout Today"
+        '
         'Guna2ContainerControl1
         '
         Me.Guna2ContainerControl1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ContainerControl1.BorderRadius = 10
+        Me.Guna2ContainerControl1.Controls.Add(Me.PictureBox9)
+        Me.Guna2ContainerControl1.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Guna2ContainerControl1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2ContainerControl1.FillColor = System.Drawing.Color.PaleVioletRed
         Me.Guna2ContainerControl1.Location = New System.Drawing.Point(55, 268)
@@ -282,12 +293,40 @@ Partial Class Form2
         Me.Guna2ContainerControl1.Size = New System.Drawing.Size(182, 241)
         Me.Guna2ContainerControl1.TabIndex = 4
         '
+        'PictureBox9
+        '
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox9.Enabled = False
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(41, 64)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(92, 92)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox9.TabIndex = 4
+        Me.PictureBox9.TabStop = False
+        '
+        'Guna2HtmlLabel5
+        '
+        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(17, 3)
+        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(143, 30)
+        Me.Guna2HtmlLabel5.TabIndex = 3
+        Me.Guna2HtmlLabel5.Text = "About Fitque"
+        '
         'Guna2ContainerControl3
         '
         Me.Guna2ContainerControl3.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ContainerControl3.BorderRadius = 10
+        Me.Guna2ContainerControl3.Controls.Add(Me.Guna2ContainerControl7)
+        Me.Guna2ContainerControl3.Controls.Add(Me.Guna2ContainerControl5)
+        Me.Guna2ContainerControl3.Controls.Add(Me.Guna2ContainerControl6)
+        Me.Guna2ContainerControl3.Controls.Add(Me.cmdRefresh)
         Me.Guna2ContainerControl3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2ContainerControl3.FillColor = System.Drawing.Color.Tan
+        Me.Guna2ContainerControl3.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Guna2ContainerControl3.Location = New System.Drawing.Point(55, 3)
         Me.Guna2ContainerControl3.Name = "Guna2ContainerControl3"
         Me.Guna2ContainerControl3.ShadowDecoration.BorderRadius = 10
@@ -297,168 +336,219 @@ Partial Class Form2
         Me.Guna2ContainerControl3.Size = New System.Drawing.Size(612, 241)
         Me.Guna2ContainerControl3.TabIndex = 2
         '
-        'panSettings
+        'Guna2ContainerControl7
         '
-        Me.panSettings.BorderRadius = 12
-        Me.panSettings.Controls.Add(Me.lblEmail)
-        Me.panSettings.Controls.Add(Me.cmdChangePwd)
-        Me.panSettings.Controls.Add(Me.txtConfPwd)
-        Me.panSettings.Controls.Add(Me.txtNewPwd)
-        Me.panSettings.Controls.Add(Me.grpDetails)
-        Me.panSettings.Controls.Add(Me.lblBanner2)
-        Me.panSettings.Controls.Add(Me.PictureBox1)
-        Me.panSettings.Controls.Add(Me.Guna2GradientCircleButton1)
-        Me.panSettings.Location = New System.Drawing.Point(191, 88)
-        Me.panSettings.Name = "panSettings"
-        Me.panSettings.Size = New System.Drawing.Size(491, 451)
-        Me.panSettings.TabIndex = 12
-        Me.panSettings.Text = "Guna2ContainerControl5"
+        Me.Guna2ContainerControl7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ContainerControl7.BorderRadius = 10
+        Me.Guna2ContainerControl7.Controls.Add(Me.progressWorkout)
+        Me.Guna2ContainerControl7.Controls.Add(Me.Guna2HtmlLabel9)
+        Me.Guna2ContainerControl7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2ContainerControl7.FillColor = System.Drawing.Color.DarkSlateGray
+        Me.Guna2ContainerControl7.Location = New System.Drawing.Point(205, 27)
+        Me.Guna2ContainerControl7.Name = "Guna2ContainerControl7"
+        Me.Guna2ContainerControl7.ShadowDecoration.BorderRadius = 10
+        Me.Guna2ContainerControl7.ShadowDecoration.Depth = 20
+        Me.Guna2ContainerControl7.ShadowDecoration.Enabled = True
+        Me.Guna2ContainerControl7.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.Guna2ContainerControl7.Size = New System.Drawing.Size(158, 175)
+        Me.Guna2ContainerControl7.TabIndex = 7
         '
-        'lblEmail
+        'progressWorkout
         '
-        Me.lblEmail.BackColor = System.Drawing.Color.Transparent
-        Me.lblEmail.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.lblEmail.Location = New System.Drawing.Point(172, 163)
-        Me.lblEmail.Name = "lblEmail"
-        Me.lblEmail.Size = New System.Drawing.Size(231, 32)
-        Me.lblEmail.TabIndex = 2
-        Me.lblEmail.Text = "someone@example.com"
+        Me.progressWorkout.FillColor = System.Drawing.Color.White
+        Me.progressWorkout.FillThickness = 15
+        Me.progressWorkout.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.progressWorkout.ForeColor = System.Drawing.Color.White
+        Me.progressWorkout.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal
+        Me.progressWorkout.Image = CType(resources.GetObject("progressWorkout.Image"), System.Drawing.Image)
+        Me.progressWorkout.ImageSize = New System.Drawing.Size(50, 50)
+        Me.progressWorkout.Location = New System.Drawing.Point(16, 41)
+        Me.progressWorkout.Minimum = 0
+        Me.progressWorkout.Name = "progressWorkout"
+        Me.progressWorkout.ProgressColor = System.Drawing.Color.RoyalBlue
+        Me.progressWorkout.ProgressColor2 = System.Drawing.Color.SteelBlue
+        Me.progressWorkout.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.progressWorkout.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Square
+        Me.progressWorkout.ProgressThickness = 22
+        Me.progressWorkout.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.progressWorkout.Size = New System.Drawing.Size(130, 130)
+        Me.progressWorkout.TabIndex = 4
+        Me.progressWorkout.Text = "Guna2CircleProgressBar1"
+        Me.progressWorkout.Value = 70
         '
-        'cmdChangePwd
+        'Guna2HtmlLabel9
         '
-        Me.cmdChangePwd.BackColor = System.Drawing.Color.Transparent
-        Me.cmdChangePwd.BorderRadius = 8
-        Me.cmdChangePwd.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.cmdChangePwd.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.cmdChangePwd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.cmdChangePwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.cmdChangePwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.cmdChangePwd.FillColor = System.Drawing.Color.OrangeRed
-        Me.cmdChangePwd.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.cmdChangePwd.ForeColor = System.Drawing.Color.White
-        Me.cmdChangePwd.HoverState.FillColor = System.Drawing.Color.Tomato
-        Me.cmdChangePwd.Location = New System.Drawing.Point(181, 405)
-        Me.cmdChangePwd.Name = "cmdChangePwd"
-        Me.cmdChangePwd.Size = New System.Drawing.Size(124, 43)
-        Me.cmdChangePwd.TabIndex = 6
-        Me.cmdChangePwd.Text = "&Change Password"
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(28, 7)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(102, 29)
+        Me.Guna2HtmlLabel9.TabIndex = 3
+        Me.Guna2HtmlLabel9.Text = "Workouts"
         '
-        'txtConfPwd
+        'Guna2ContainerControl5
         '
-        Me.txtConfPwd.BackColor = System.Drawing.Color.White
-        Me.txtConfPwd.BorderColor = System.Drawing.Color.MediumSlateBlue
-        Me.txtConfPwd.BorderFocusColor = System.Drawing.Color.HotPink
-        Me.txtConfPwd.BorderRadius = 8
-        Me.txtConfPwd.BorderSize = 2
-        Me.txtConfPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtConfPwd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtConfPwd.Location = New System.Drawing.Point(258, 334)
-        Me.txtConfPwd.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtConfPwd.Multiline = False
-        Me.txtConfPwd.Name = "txtConfPwd"
-        Me.txtConfPwd.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
-        Me.txtConfPwd.PasswordChar = True
-        Me.txtConfPwd.PlaceholderColor = System.Drawing.Color.DarkGray
-        Me.txtConfPwd.PlaceholderText = "Confirm Password"
-        Me.txtConfPwd.Size = New System.Drawing.Size(189, 31)
-        Me.txtConfPwd.TabIndex = 5
-        Me.txtConfPwd.Texts = ""
-        Me.txtConfPwd.UnderlinedStyle = False
+        Me.Guna2ContainerControl5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ContainerControl5.BorderRadius = 10
+        Me.Guna2ContainerControl5.Controls.Add(Me.cmdToSettings)
+        Me.Guna2ContainerControl5.Controls.Add(Me.cmdToMeals)
+        Me.Guna2ContainerControl5.Controls.Add(Me.cmdToWorkout)
+        Me.Guna2ContainerControl5.Controls.Add(Me.Guna2HtmlLabel7)
+        Me.Guna2ContainerControl5.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2ContainerControl5.FillColor = System.Drawing.Color.Maroon
+        Me.Guna2ContainerControl5.Location = New System.Drawing.Point(389, 29)
+        Me.Guna2ContainerControl5.Name = "Guna2ContainerControl5"
+        Me.Guna2ContainerControl5.ShadowDecoration.BorderRadius = 10
+        Me.Guna2ContainerControl5.ShadowDecoration.Depth = 20
+        Me.Guna2ContainerControl5.ShadowDecoration.Enabled = True
+        Me.Guna2ContainerControl5.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.Guna2ContainerControl5.Size = New System.Drawing.Size(158, 175)
+        Me.Guna2ContainerControl5.TabIndex = 6
         '
-        'txtNewPwd
+        'cmdToSettings
         '
-        Me.txtNewPwd.BackColor = System.Drawing.Color.White
-        Me.txtNewPwd.BorderColor = System.Drawing.Color.MediumSlateBlue
-        Me.txtNewPwd.BorderFocusColor = System.Drawing.Color.HotPink
-        Me.txtNewPwd.BorderRadius = 8
-        Me.txtNewPwd.BorderSize = 2
-        Me.txtNewPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtNewPwd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.txtNewPwd.Location = New System.Drawing.Point(54, 334)
-        Me.txtNewPwd.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtNewPwd.Multiline = False
-        Me.txtNewPwd.Name = "txtNewPwd"
-        Me.txtNewPwd.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
-        Me.txtNewPwd.PasswordChar = True
-        Me.txtNewPwd.PlaceholderColor = System.Drawing.Color.DarkGray
-        Me.txtNewPwd.PlaceholderText = "New password"
-        Me.txtNewPwd.Size = New System.Drawing.Size(189, 31)
-        Me.txtNewPwd.TabIndex = 4
-        Me.txtNewPwd.Texts = ""
-        Me.txtNewPwd.UnderlinedStyle = False
+        Me.cmdToSettings.Animated = True
+        Me.cmdToSettings.BackColor = System.Drawing.Color.Transparent
+        Me.cmdToSettings.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdToSettings.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdToSettings.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdToSettings.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdToSettings.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdToSettings.FillColor = System.Drawing.Color.RoyalBlue
+        Me.cmdToSettings.FillColor2 = System.Drawing.Color.SlateGray
+        Me.cmdToSettings.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdToSettings.ForeColor = System.Drawing.Color.White
+        Me.cmdToSettings.Image = CType(resources.GetObject("cmdToSettings.Image"), System.Drawing.Image)
+        Me.cmdToSettings.ImageSize = New System.Drawing.Size(30, 30)
+        Me.cmdToSettings.Location = New System.Drawing.Point(69, 121)
+        Me.cmdToSettings.Name = "cmdToSettings"
+        Me.cmdToSettings.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdToSettings.Size = New System.Drawing.Size(35, 35)
+        Me.cmdToSettings.TabIndex = 6
         '
-        'grpDetails
+        'cmdToMeals
         '
-        Me.grpDetails.Controls.Add(Me.lblLast)
-        Me.grpDetails.Controls.Add(Me.lblFirst)
-        Me.grpDetails.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.grpDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        Me.grpDetails.Location = New System.Drawing.Point(54, 201)
-        Me.grpDetails.Name = "grpDetails"
-        Me.grpDetails.Size = New System.Drawing.Size(393, 126)
-        Me.grpDetails.TabIndex = 3
-        Me.grpDetails.Text = "My Details"
+        Me.cmdToMeals.Animated = True
+        Me.cmdToMeals.BackColor = System.Drawing.Color.Transparent
+        Me.cmdToMeals.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdToMeals.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdToMeals.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdToMeals.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdToMeals.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdToMeals.FillColor = System.Drawing.Color.RoyalBlue
+        Me.cmdToMeals.FillColor2 = System.Drawing.Color.SlateGray
+        Me.cmdToMeals.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdToMeals.ForeColor = System.Drawing.Color.White
+        Me.cmdToMeals.Image = CType(resources.GetObject("cmdToMeals.Image"), System.Drawing.Image)
+        Me.cmdToMeals.ImageSize = New System.Drawing.Size(30, 30)
+        Me.cmdToMeals.Location = New System.Drawing.Point(69, 80)
+        Me.cmdToMeals.Name = "cmdToMeals"
+        Me.cmdToMeals.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdToMeals.Size = New System.Drawing.Size(35, 35)
+        Me.cmdToMeals.TabIndex = 5
         '
-        'lblLast
+        'cmdToWorkout
         '
-        Me.lblLast.BackColor = System.Drawing.Color.Transparent
-        Me.lblLast.ForeColor = System.Drawing.Color.Gray
-        Me.lblLast.Location = New System.Drawing.Point(251, 58)
-        Me.lblLast.Name = "lblLast"
-        Me.lblLast.Size = New System.Drawing.Size(98, 17)
-        Me.lblLast.TabIndex = 1
-        Me.lblLast.Text = "Guna2HtmlLabel2"
+        Me.cmdToWorkout.Animated = True
+        Me.cmdToWorkout.BackColor = System.Drawing.Color.Transparent
+        Me.cmdToWorkout.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdToWorkout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdToWorkout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdToWorkout.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdToWorkout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdToWorkout.FillColor = System.Drawing.Color.RoyalBlue
+        Me.cmdToWorkout.FillColor2 = System.Drawing.Color.SlateGray
+        Me.cmdToWorkout.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdToWorkout.ForeColor = System.Drawing.Color.White
+        Me.cmdToWorkout.Image = CType(resources.GetObject("cmdToWorkout.Image"), System.Drawing.Image)
+        Me.cmdToWorkout.ImageSize = New System.Drawing.Size(30, 30)
+        Me.cmdToWorkout.Location = New System.Drawing.Point(69, 39)
+        Me.cmdToWorkout.Name = "cmdToWorkout"
+        Me.cmdToWorkout.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdToWorkout.Size = New System.Drawing.Size(35, 35)
+        Me.cmdToWorkout.TabIndex = 4
         '
-        'lblFirst
+        'Guna2HtmlLabel7
         '
-        Me.lblFirst.BackColor = System.Drawing.Color.Transparent
-        Me.lblFirst.Location = New System.Drawing.Point(31, 58)
-        Me.lblFirst.Name = "lblFirst"
-        Me.lblFirst.Size = New System.Drawing.Size(98, 17)
-        Me.lblFirst.TabIndex = 0
-        Me.lblFirst.Text = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(20, 3)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(124, 30)
+        Me.Guna2HtmlLabel7.TabIndex = 3
+        Me.Guna2HtmlLabel7.Text = "Quick Links"
         '
-        'lblBanner2
+        'Guna2ContainerControl6
         '
-        Me.lblBanner2.BackColor = System.Drawing.Color.Transparent
-        Me.lblBanner2.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblBanner2.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.lblBanner2.Location = New System.Drawing.Point(54, 5)
-        Me.lblBanner2.Name = "lblBanner2"
-        Me.lblBanner2.Size = New System.Drawing.Size(129, 33)
-        Me.lblBanner2.TabIndex = 2
-        Me.lblBanner2.Text = "My Profile"
+        Me.Guna2ContainerControl6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ContainerControl6.BorderRadius = 10
+        Me.Guna2ContainerControl6.Controls.Add(Me.Guna2GradientCircleButton4)
+        Me.Guna2ContainerControl6.Controls.Add(Me.Guna2HtmlLabel6)
+        Me.Guna2ContainerControl6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Guna2ContainerControl6.FillColor = System.Drawing.Color.Black
+        Me.Guna2ContainerControl6.Location = New System.Drawing.Point(17, 29)
+        Me.Guna2ContainerControl6.Name = "Guna2ContainerControl6"
+        Me.Guna2ContainerControl6.ShadowDecoration.BorderRadius = 10
+        Me.Guna2ContainerControl6.ShadowDecoration.Depth = 20
+        Me.Guna2ContainerControl6.ShadowDecoration.Enabled = True
+        Me.Guna2ContainerControl6.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -5, 20, 10)
+        Me.Guna2ContainerControl6.Size = New System.Drawing.Size(158, 175)
+        Me.Guna2ContainerControl6.TabIndex = 5
         '
-        'PictureBox1
+        'Guna2GradientCircleButton4
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Enabled = False
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(205, 57)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.Guna2GradientCircleButton4.Animated = True
+        Me.Guna2GradientCircleButton4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GradientCircleButton4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
+        Me.Guna2GradientCircleButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientCircleButton4.FillColor = System.Drawing.Color.MediumVioletRed
+        Me.Guna2GradientCircleButton4.FillColor2 = System.Drawing.Color.Red
+        Me.Guna2GradientCircleButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GradientCircleButton4.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton4.Image = CType(resources.GetObject("Guna2GradientCircleButton4.Image"), System.Drawing.Image)
+        Me.Guna2GradientCircleButton4.ImageSize = New System.Drawing.Size(80, 80)
+        Me.Guna2GradientCircleButton4.Location = New System.Drawing.Point(39, 52)
+        Me.Guna2GradientCircleButton4.Name = "Guna2GradientCircleButton4"
+        Me.Guna2GradientCircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton4.Size = New System.Drawing.Size(80, 80)
+        Me.Guna2GradientCircleButton4.TabIndex = 4
         '
-        'Guna2GradientCircleButton1
+        'Guna2HtmlLabel6
         '
-        Me.Guna2GradientCircleButton1.Animated = True
-        Me.Guna2GradientCircleButton1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientCircleButton1.FillColor = System.Drawing.Color.MediumVioletRed
-        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientCircleButton1.Image = CType(resources.GetObject("Guna2GradientCircleButton1.Image"), System.Drawing.Image)
-        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(3, 3)
-        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
-        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(35, 35)
-        Me.Guna2GradientCircleButton1.TabIndex = 0
+        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft YaHei UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(39, 3)
+        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(78, 30)
+        Me.Guna2HtmlLabel6.TabIndex = 3
+        Me.Guna2HtmlLabel6.Text = "Trainer"
+        '
+        'cmdRefresh
+        '
+        Me.cmdRefresh.Animated = True
+        Me.cmdRefresh.BackColor = System.Drawing.Color.Transparent
+        Me.cmdRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdRefresh.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdRefresh.FillColor = System.Drawing.Color.LightGray
+        Me.cmdRefresh.FillColor2 = System.Drawing.Color.White
+        Me.cmdRefresh.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdRefresh.ForeColor = System.Drawing.Color.White
+        Me.cmdRefresh.Image = CType(resources.GetObject("cmdRefresh.Image"), System.Drawing.Image)
+        Me.cmdRefresh.Location = New System.Drawing.Point(553, 14)
+        Me.cmdRefresh.Name = "cmdRefresh"
+        Me.cmdRefresh.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdRefresh.Size = New System.Drawing.Size(47, 48)
+        Me.cmdRefresh.TabIndex = 1
         '
         'panDiet
         '
@@ -467,9 +557,9 @@ Partial Class Form2
         Me.panDiet.Controls.Add(Me.Guna2HtmlLabel4)
         Me.panDiet.Controls.Add(Me.PictureBox2)
         Me.panDiet.Controls.Add(Me.cmdBack)
-        Me.panDiet.Location = New System.Drawing.Point(174, 581)
+        Me.panDiet.Location = New System.Drawing.Point(65, 25)
         Me.panDiet.Name = "panDiet"
-        Me.panDiet.Size = New System.Drawing.Size(529, 471)
+        Me.panDiet.Size = New System.Drawing.Size(540, 471)
         Me.panDiet.TabIndex = 14
         Me.panDiet.Text = "Guna2ContainerControl5"
         '
@@ -684,20 +774,245 @@ Partial Class Form2
         Me.cmdBack.Size = New System.Drawing.Size(35, 35)
         Me.cmdBack.TabIndex = 0
         '
+        'panSettings
+        '
+        Me.panSettings.BorderRadius = 12
+        Me.panSettings.Controls.Add(Me.lblEmail)
+        Me.panSettings.Controls.Add(Me.cmdChangePwd)
+        Me.panSettings.Controls.Add(Me.txtConfPwd)
+        Me.panSettings.Controls.Add(Me.txtNewPwd)
+        Me.panSettings.Controls.Add(Me.grpDetails)
+        Me.panSettings.Controls.Add(Me.lblBanner2)
+        Me.panSettings.Controls.Add(Me.PictureBox1)
+        Me.panSettings.Controls.Add(Me.Guna2GradientCircleButton1)
+        Me.panSettings.Location = New System.Drawing.Point(65, 25)
+        Me.panSettings.Name = "panSettings"
+        Me.panSettings.Size = New System.Drawing.Size(491, 451)
+        Me.panSettings.TabIndex = 12
+        Me.panSettings.Text = "Guna2ContainerControl5"
+        '
+        'lblEmail
+        '
+        Me.lblEmail.BackColor = System.Drawing.Color.Transparent
+        Me.lblEmail.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.lblEmail.Location = New System.Drawing.Point(172, 163)
+        Me.lblEmail.Name = "lblEmail"
+        Me.lblEmail.Size = New System.Drawing.Size(231, 32)
+        Me.lblEmail.TabIndex = 2
+        Me.lblEmail.Text = "someone@example.com"
+        '
+        'cmdChangePwd
+        '
+        Me.cmdChangePwd.BackColor = System.Drawing.Color.Transparent
+        Me.cmdChangePwd.BorderRadius = 8
+        Me.cmdChangePwd.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.cmdChangePwd.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdChangePwd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdChangePwd.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdChangePwd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdChangePwd.FillColor = System.Drawing.Color.OrangeRed
+        Me.cmdChangePwd.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdChangePwd.ForeColor = System.Drawing.Color.White
+        Me.cmdChangePwd.HoverState.FillColor = System.Drawing.Color.Tomato
+        Me.cmdChangePwd.Location = New System.Drawing.Point(181, 405)
+        Me.cmdChangePwd.Name = "cmdChangePwd"
+        Me.cmdChangePwd.Size = New System.Drawing.Size(124, 43)
+        Me.cmdChangePwd.TabIndex = 6
+        Me.cmdChangePwd.Text = "&Change Password"
+        '
+        'txtConfPwd
+        '
+        Me.txtConfPwd.BackColor = System.Drawing.Color.White
+        Me.txtConfPwd.BorderColor = System.Drawing.Color.MediumSlateBlue
+        Me.txtConfPwd.BorderFocusColor = System.Drawing.Color.HotPink
+        Me.txtConfPwd.BorderRadius = 8
+        Me.txtConfPwd.BorderSize = 2
+        Me.txtConfPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtConfPwd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtConfPwd.Location = New System.Drawing.Point(258, 334)
+        Me.txtConfPwd.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtConfPwd.Multiline = False
+        Me.txtConfPwd.Name = "txtConfPwd"
+        Me.txtConfPwd.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
+        Me.txtConfPwd.PasswordChar = True
+        Me.txtConfPwd.PlaceholderColor = System.Drawing.Color.DarkGray
+        Me.txtConfPwd.PlaceholderText = "Confirm Password"
+        Me.txtConfPwd.Size = New System.Drawing.Size(189, 31)
+        Me.txtConfPwd.TabIndex = 5
+        Me.txtConfPwd.Texts = ""
+        Me.txtConfPwd.UnderlinedStyle = False
+        '
+        'txtNewPwd
+        '
+        Me.txtNewPwd.BackColor = System.Drawing.Color.White
+        Me.txtNewPwd.BorderColor = System.Drawing.Color.MediumSlateBlue
+        Me.txtNewPwd.BorderFocusColor = System.Drawing.Color.HotPink
+        Me.txtNewPwd.BorderRadius = 8
+        Me.txtNewPwd.BorderSize = 2
+        Me.txtNewPwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.5!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtNewPwd.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.txtNewPwd.Location = New System.Drawing.Point(54, 334)
+        Me.txtNewPwd.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtNewPwd.Multiline = False
+        Me.txtNewPwd.Name = "txtNewPwd"
+        Me.txtNewPwd.Padding = New System.Windows.Forms.Padding(10, 7, 10, 7)
+        Me.txtNewPwd.PasswordChar = True
+        Me.txtNewPwd.PlaceholderColor = System.Drawing.Color.DarkGray
+        Me.txtNewPwd.PlaceholderText = "New password"
+        Me.txtNewPwd.Size = New System.Drawing.Size(189, 31)
+        Me.txtNewPwd.TabIndex = 4
+        Me.txtNewPwd.Texts = ""
+        Me.txtNewPwd.UnderlinedStyle = False
+        '
+        'grpDetails
+        '
+        Me.grpDetails.Controls.Add(Me.lblLast)
+        Me.grpDetails.Controls.Add(Me.lblFirst)
+        Me.grpDetails.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.grpDetails.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        Me.grpDetails.Location = New System.Drawing.Point(54, 201)
+        Me.grpDetails.Name = "grpDetails"
+        Me.grpDetails.Size = New System.Drawing.Size(393, 126)
+        Me.grpDetails.TabIndex = 3
+        Me.grpDetails.Text = "My Details"
+        '
+        'lblLast
+        '
+        Me.lblLast.BackColor = System.Drawing.Color.Transparent
+        Me.lblLast.ForeColor = System.Drawing.Color.Gray
+        Me.lblLast.Location = New System.Drawing.Point(251, 58)
+        Me.lblLast.Name = "lblLast"
+        Me.lblLast.Size = New System.Drawing.Size(98, 17)
+        Me.lblLast.TabIndex = 1
+        Me.lblLast.Text = "Guna2HtmlLabel2"
+        '
+        'lblFirst
+        '
+        Me.lblFirst.BackColor = System.Drawing.Color.Transparent
+        Me.lblFirst.Location = New System.Drawing.Point(31, 58)
+        Me.lblFirst.Name = "lblFirst"
+        Me.lblFirst.Size = New System.Drawing.Size(98, 17)
+        Me.lblFirst.TabIndex = 0
+        Me.lblFirst.Text = "Guna2HtmlLabel2"
+        '
+        'lblBanner2
+        '
+        Me.lblBanner2.BackColor = System.Drawing.Color.Transparent
+        Me.lblBanner2.Font = New System.Drawing.Font("Microsoft YaHei", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBanner2.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.lblBanner2.Location = New System.Drawing.Point(54, 5)
+        Me.lblBanner2.Name = "lblBanner2"
+        Me.lblBanner2.Size = New System.Drawing.Size(129, 33)
+        Me.lblBanner2.TabIndex = 2
+        Me.lblBanner2.Text = "My Profile"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Enabled = False
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(205, 57)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(100, 100)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
+        '
+        'Guna2GradientCircleButton1
+        '
+        Me.Guna2GradientCircleButton1.Animated = True
+        Me.Guna2GradientCircleButton1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2GradientCircleButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2GradientCircleButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2GradientCircleButton1.FillColor = System.Drawing.Color.MediumVioletRed
+        Me.Guna2GradientCircleButton1.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2GradientCircleButton1.ForeColor = System.Drawing.Color.White
+        Me.Guna2GradientCircleButton1.Image = CType(resources.GetObject("Guna2GradientCircleButton1.Image"), System.Drawing.Image)
+        Me.Guna2GradientCircleButton1.Location = New System.Drawing.Point(3, 3)
+        Me.Guna2GradientCircleButton1.Name = "Guna2GradientCircleButton1"
+        Me.Guna2GradientCircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2GradientCircleButton1.Size = New System.Drawing.Size(35, 35)
+        Me.Guna2GradientCircleButton1.TabIndex = 0
+        '
         'workouts
         '
+        Me.workouts.BackColor = System.Drawing.Color.Transparent
         Me.workouts.BorderRadius = 12
+        Me.workouts.Controls.Add(Me.progressTimer)
+        Me.workouts.Controls.Add(Me.cmdStartWorkout)
+        Me.workouts.Controls.Add(Me.workoutDescription)
         Me.workouts.Controls.Add(Me.cmbWorkoutName)
         Me.workouts.Controls.Add(Me.cmbWorkoutType)
         Me.workouts.Controls.Add(Me.PictureBox6)
         Me.workouts.Controls.Add(Me.Guna2GroupBox1)
         Me.workouts.Controls.Add(Me.Guna2HtmlLabel8)
         Me.workouts.Controls.Add(Me.Guna2GradientCircleButton2)
-        Me.workouts.Location = New System.Drawing.Point(801, 594)
+        Me.workouts.Location = New System.Drawing.Point(65, 25)
         Me.workouts.Name = "workouts"
+        Me.workouts.ShadowDecoration.BorderRadius = 20
+        Me.workouts.ShadowDecoration.Enabled = True
+        Me.workouts.ShadowDecoration.Shadow = New System.Windows.Forms.Padding(0, -10, 15, 20)
         Me.workouts.Size = New System.Drawing.Size(529, 471)
         Me.workouts.TabIndex = 15
         Me.workouts.Text = "Guna2ContainerControl5"
+        '
+        'progressTimer
+        '
+        Me.progressTimer.BackColor = System.Drawing.Color.Transparent
+        Me.progressTimer.FillColor = System.Drawing.Color.LightGray
+        Me.progressTimer.FillThickness = 20
+        Me.progressTimer.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.progressTimer.ForeColor = System.Drawing.Color.White
+        Me.progressTimer.Location = New System.Drawing.Point(372, 44)
+        Me.progressTimer.Minimum = 0
+        Me.progressTimer.Name = "progressTimer"
+        Me.progressTimer.ProgressColor = System.Drawing.Color.Teal
+        Me.progressTimer.ProgressColor2 = System.Drawing.Color.DarkCyan
+        Me.progressTimer.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.progressTimer.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.progressTimer.ProgressThickness = 20
+        Me.progressTimer.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.progressTimer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.progressTimer.ShowText = True
+        Me.progressTimer.Size = New System.Drawing.Size(100, 100)
+        Me.progressTimer.TabIndex = 9
+        '
+        'cmdStartWorkout
+        '
+        Me.cmdStartWorkout.Animated = True
+        Me.cmdStartWorkout.BackColor = System.Drawing.Color.Transparent
+        Me.cmdStartWorkout.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdStartWorkout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdStartWorkout.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdStartWorkout.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdStartWorkout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdStartWorkout.FillColor = System.Drawing.Color.LemonChiffon
+        Me.cmdStartWorkout.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.cmdStartWorkout.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdStartWorkout.ForeColor = System.Drawing.Color.White
+        Me.cmdStartWorkout.Image = CType(resources.GetObject("cmdStartWorkout.Image"), System.Drawing.Image)
+        Me.cmdStartWorkout.ImageSize = New System.Drawing.Size(25, 25)
+        Me.cmdStartWorkout.Location = New System.Drawing.Point(118, 74)
+        Me.cmdStartWorkout.Name = "cmdStartWorkout"
+        Me.cmdStartWorkout.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdStartWorkout.Size = New System.Drawing.Size(41, 39)
+        Me.cmdStartWorkout.TabIndex = 8
+        '
+        'workoutDescription
+        '
+        Me.workoutDescription.AutoSize = False
+        Me.workoutDescription.AutoSizeHeightOnly = True
+        Me.workoutDescription.BackColor = System.Drawing.Color.Transparent
+        Me.workoutDescription.Location = New System.Drawing.Point(19, 201)
+        Me.workoutDescription.MaximumSize = New System.Drawing.Size(500, 100)
+        Me.workoutDescription.MinimumSize = New System.Drawing.Size(500, 100)
+        Me.workoutDescription.Name = "workoutDescription"
+        Me.workoutDescription.Size = New System.Drawing.Size(500, 100)
+        Me.workoutDescription.TabIndex = 7
+        Me.workoutDescription.Text = "Workout Description"
         '
         'cmbWorkoutName
         '
@@ -753,7 +1068,7 @@ Partial Class Form2
         Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
         Me.Guna2GroupBox1.Location = New System.Drawing.Point(0, 315)
         Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(529, 153)
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(526, 153)
         Me.Guna2GroupBox1.TabIndex = 3
         Me.Guna2GroupBox1.Text = "My Progress"
         '
@@ -793,7 +1108,7 @@ Partial Class Form2
         Me.grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.grid.RowHeadersVisible = False
         Me.grid.RowTemplate.Height = 25
-        Me.grid.Size = New System.Drawing.Size(523, 112)
+        Me.grid.Size = New System.Drawing.Size(516, 112)
         Me.grid.TabIndex = 0
         Me.grid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White
         Me.grid.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -847,21 +1162,90 @@ Partial Class Form2
         Me.Guna2GradientCircleButton2.Size = New System.Drawing.Size(35, 35)
         Me.Guna2GradientCircleButton2.TabIndex = 0
         '
+        'Timer1
+        '
+        '
+        'Guna2TabControl1
+        '
+        Me.Guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage1)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage2)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage3)
+        Me.Guna2TabControl1.Controls.Add(Me.TabPage4)
+        Me.Guna2TabControl1.ItemSize = New System.Drawing.Size(180, 40)
+        Me.Guna2TabControl1.Location = New System.Drawing.Point(12, 82)
+        Me.Guna2TabControl1.Name = "Guna2TabControl1"
+        Me.Guna2TabControl1.SelectedIndex = 0
+        Me.Guna2TabControl1.Size = New System.Drawing.Size(869, 573)
+        Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
+        Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White
+        Me.Guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty
+        Me.Guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonIdleState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty
+        Me.Guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
+        Me.Guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Guna2TabControl1.TabButtonSize = New System.Drawing.Size(180, 40)
+        Me.Guna2TabControl1.TabIndex = 16
+        Me.Guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.TabPage1.Controls.Add(Me.panHome)
+        Me.TabPage1.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(681, 565)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Home"
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.TabPage2.Controls.Add(Me.workouts)
+        Me.TabPage2.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(681, 565)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Workout"
+        '
+        'TabPage3
+        '
+        Me.TabPage3.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.TabPage3.Controls.Add(Me.panDiet)
+        Me.TabPage3.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(681, 565)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Diet"
+        '
+        'TabPage4
+        '
+        Me.TabPage4.BackColor = System.Drawing.Color.DarkSlateGray
+        Me.TabPage4.Controls.Add(Me.panSettings)
+        Me.TabPage4.Location = New System.Drawing.Point(184, 4)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(681, 565)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Settings"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1410, 1100)
-        Me.Controls.Add(Me.workouts)
-        Me.Controls.Add(Me.panDiet)
-        Me.Controls.Add(Me.panSettings)
-        Me.Controls.Add(Me.panHome)
-        Me.Controls.Add(Me.cmdSettings)
-        Me.Controls.Add(Me.cmdDiet)
-        Me.Controls.Add(Me.cmdWorkOut)
-        Me.Controls.Add(Me.cmdDashBoard)
+        Me.ClientSize = New System.Drawing.Size(893, 649)
+        Me.Controls.Add(Me.Guna2TabControl1)
         Me.Controls.Add(Me.lblBanner)
         Me.Controls.Add(Me.cmdClose)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -870,11 +1254,22 @@ Partial Class Form2
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Fitque | Dashboard"
         Me.panHome.ResumeLayout(False)
-        Me.panSettings.ResumeLayout(False)
-        Me.panSettings.PerformLayout()
-        Me.grpDetails.ResumeLayout(False)
-        Me.grpDetails.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl4.ResumeLayout(False)
+        Me.Guna2ContainerControl4.PerformLayout()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl2.ResumeLayout(False)
+        Me.Guna2ContainerControl2.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl1.ResumeLayout(False)
+        Me.Guna2ContainerControl1.PerformLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2ContainerControl3.ResumeLayout(False)
+        Me.Guna2ContainerControl7.ResumeLayout(False)
+        Me.Guna2ContainerControl7.PerformLayout()
+        Me.Guna2ContainerControl5.ResumeLayout(False)
+        Me.Guna2ContainerControl5.PerformLayout()
+        Me.Guna2ContainerControl6.ResumeLayout(False)
+        Me.Guna2ContainerControl6.PerformLayout()
         Me.panDiet.ResumeLayout(False)
         Me.panDiet.PerformLayout()
         Me.grpDiet.ResumeLayout(False)
@@ -888,11 +1283,21 @@ Partial Class Form2
         Me.conBreakfast.PerformLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.panSettings.ResumeLayout(False)
+        Me.panSettings.PerformLayout()
+        Me.grpDetails.ResumeLayout(False)
+        Me.grpDetails.PerformLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.workouts.ResumeLayout(False)
         Me.workouts.PerformLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GroupBox1.ResumeLayout(False)
         CType(Me.grid, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Guna2TabControl1.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
+        Me.TabPage2.ResumeLayout(False)
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -901,10 +1306,6 @@ Partial Class Form2
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents cmdClose As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents lblBanner As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents cmdSettings As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents cmdDiet As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents cmdWorkOut As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents cmdDashBoard As Guna.UI2.WinForms.Guna2GradientCircleButton
     Friend WithEvents panHome As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents Guna2ContainerControl4 As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents Guna2ContainerControl2 As Guna.UI2.WinForms.Guna2ContainerControl
@@ -946,4 +1347,32 @@ Partial Class Form2
     Friend WithEvents cmbWorkoutName As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents cmbWorkoutType As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents grid As Guna.UI2.WinForms.Guna2DataGridView
+    Friend WithEvents workoutDescription As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents progressTimer As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents cmdStartWorkout As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents lblBreakBanner As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents lblWorkoutsToday As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents cmdRefresh As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents Guna2ContainerControl7 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2ContainerControl5 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2ContainerControl6 As Guna.UI2.WinForms.Guna2ContainerControl
+    Friend WithEvents Guna2GradientCircleButton4 As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents progressWorkout As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents cmdToSettings As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents cmdToMeals As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents cmdToWorkout As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents Guna2TabControl1 As Guna.UI2.WinForms.Guna2TabControl
+    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents TabPage2 As TabPage
+    Friend WithEvents TabPage3 As TabPage
+    Friend WithEvents TabPage4 As TabPage
 End Class
