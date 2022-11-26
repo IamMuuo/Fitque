@@ -8,6 +8,7 @@ Public Class Form2
     Dim con As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Erick\source\repos\Fitque\DB\GYM.accdb")
     Public Shared username As String
     Private Sub CmdClose_Click(sender As Object, e As EventArgs) Handles cmdClose.Click
+        SplashScreen.Close()
         Form1.Close()
         Me.Close()
     End Sub
