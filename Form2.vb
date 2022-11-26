@@ -242,4 +242,16 @@ Public Class Form2
     Private Sub cmdContactTrainer_Click(sender As Object, e As EventArgs) Handles cmdContactTrainer.Click
         MsgBox("Trainer Contact Coming soon!", MsgBoxStyle.Information, "Fitque")
     End Sub
+
+    Private Sub cmdToWorkout_Click(sender As Object, e As EventArgs) Handles cmdToWorkout.Click
+        tabControl.SelectedIndex = 1
+    End Sub
+
+    Private Sub cmdToMeals_Click(sender As Object, e As EventArgs) Handles cmdToMeals.Click
+        tabControl.SelectedIndex = 2
+    End Sub
+
+    Private Sub cmdToSettings_Click(sender As Object, e As EventArgs) Handles cmdToSettings.Click
+        tabControl.SelectedIndex = 3
+    End Sub
 End Class
