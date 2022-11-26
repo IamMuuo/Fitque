@@ -12,19 +12,8 @@ Public Class Form2
         Me.Close()
     End Sub
 
-    Private Sub cmdDashBoard_Click(sender As Object, e As EventArgs)
-        panHome.Visible = True
-    End Sub
-
-    Private Sub cmdSettings_Click(sender As Object, e As EventArgs)
-        panSettings.Visible = True
-        panHome.Visible = True
-    End Sub
-
-
     Private Sub Guna2GradientCircleButton1_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton1.Click
-        panSettings.Visible = False
-        panHome.Visible = True
+        tabControl.SelectedIndex = 0
     End Sub
 
     Private Sub cmdChangePwd_Click(sender As Object, e As EventArgs) Handles cmdChangePwd.Click
@@ -185,11 +174,11 @@ Public Class Form2
             Try
                 con.Open()
                 Dim cmd As New OleDbCommand("SELECT Workout_ID FROM Workout WHERE Workout_Name=?", con)
-                cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = cmbWorkoutName
+                cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = cmbWorkoutName.SelectedItem
 
                 Dim i = cmd.ExecuteScalar
 
-                cmd = New OleDbCommand("INSERT INTO Workouts ([Username], [Workout]), VALUES (?,?)", con)
+                cmd = New OleDbCommand("INSERT INTO Workouts ([Username], [Workout]) VALUES (?,?)", con)
                 cmd.Parameters.AddWithValue("@1", OleDb.OleDbType.VarChar).Value = username
                 cmd.Parameters.AddWithValue("@2", OleDb.OleDbType.VarChar).Value = i
 
@@ -240,5 +229,17 @@ Public Class Form2
     Private Sub cmdDiet_Click(sender As Object, e As EventArgs)
         panHome.Visible = False
         panDiet.Visible = True
+    End Sub
+
+    Private Sub Guna2GradientCircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2GradientCircleButton2.Click
+        tabControl.SelectedIndex = 0
+    End Sub
+
+    Private Sub cmdBack_Click(sender As Object, e As EventArgs) Handles cmdBack.Click
+        tabControl.SelectedIndex = 0
+    End Sub
+
+    Private Sub cmdContactTrainer_Click(sender As Object, e As EventArgs) Handles cmdContactTrainer.Click
+        MsgBox("Trainer Contact Coming soon!", MsgBoxStyle.Information, "Fitque")
     End Sub
 End Class

@@ -24,10 +24,10 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.cmdClose = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.lblBanner = New Guna.UI2.WinForms.Guna2HtmlLabel()
@@ -52,7 +52,7 @@ Partial Class Form2
         Me.cmdToWorkout = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2ContainerControl6 = New Guna.UI2.WinForms.Guna2ContainerControl()
-        Me.Guna2GradientCircleButton4 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
+        Me.cmdContactTrainer = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.cmdRefresh = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.panDiet = New Guna.UI2.WinForms.Guna2ContainerControl()
@@ -95,7 +95,7 @@ Partial Class Form2
         Me.Guna2HtmlLabel8 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2GradientCircleButton2 = New Guna.UI2.WinForms.Guna2GradientCircleButton()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Guna2TabControl1 = New Guna.UI2.WinForms.Guna2TabControl()
+        Me.tabControl = New Guna.UI2.WinForms.Guna2TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
@@ -127,7 +127,7 @@ Partial Class Form2
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2GroupBox1.SuspendLayout()
         CType(Me.grid, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Guna2TabControl1.SuspendLayout()
+        Me.tabControl.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
@@ -153,7 +153,7 @@ Partial Class Form2
         Me.cmdClose.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.cmdClose.ForeColor = System.Drawing.Color.White
         Me.cmdClose.HoverState.FillColor = System.Drawing.Color.Firebrick
-        Me.cmdClose.Location = New System.Drawing.Point(748, 12)
+        Me.cmdClose.Location = New System.Drawing.Point(841, 12)
         Me.cmdClose.Name = "cmdClose"
         Me.cmdClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.cmdClose.Size = New System.Drawing.Size(40, 40)
@@ -484,7 +484,7 @@ Partial Class Form2
         '
         Me.Guna2ContainerControl6.BackColor = System.Drawing.Color.Transparent
         Me.Guna2ContainerControl6.BorderRadius = 10
-        Me.Guna2ContainerControl6.Controls.Add(Me.Guna2GradientCircleButton4)
+        Me.Guna2ContainerControl6.Controls.Add(Me.cmdContactTrainer)
         Me.Guna2ContainerControl6.Controls.Add(Me.Guna2HtmlLabel6)
         Me.Guna2ContainerControl6.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2ContainerControl6.FillColor = System.Drawing.Color.Black
@@ -497,27 +497,27 @@ Partial Class Form2
         Me.Guna2ContainerControl6.Size = New System.Drawing.Size(158, 175)
         Me.Guna2ContainerControl6.TabIndex = 5
         '
-        'Guna2GradientCircleButton4
+        'cmdContactTrainer
         '
-        Me.Guna2GradientCircleButton4.Animated = True
-        Me.Guna2GradientCircleButton4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2GradientCircleButton4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
-        Me.Guna2GradientCircleButton4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2GradientCircleButton4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientCircleButton4.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2GradientCircleButton4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2GradientCircleButton4.FillColor = System.Drawing.Color.MediumVioletRed
-        Me.Guna2GradientCircleButton4.FillColor2 = System.Drawing.Color.Red
-        Me.Guna2GradientCircleButton4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2GradientCircleButton4.ForeColor = System.Drawing.Color.White
-        Me.Guna2GradientCircleButton4.Image = CType(resources.GetObject("Guna2GradientCircleButton4.Image"), System.Drawing.Image)
-        Me.Guna2GradientCircleButton4.ImageSize = New System.Drawing.Size(80, 80)
-        Me.Guna2GradientCircleButton4.Location = New System.Drawing.Point(39, 52)
-        Me.Guna2GradientCircleButton4.Name = "Guna2GradientCircleButton4"
-        Me.Guna2GradientCircleButton4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2GradientCircleButton4.Size = New System.Drawing.Size(80, 80)
-        Me.Guna2GradientCircleButton4.TabIndex = 4
+        Me.cmdContactTrainer.Animated = True
+        Me.cmdContactTrainer.BackColor = System.Drawing.Color.Transparent
+        Me.cmdContactTrainer.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom
+        Me.cmdContactTrainer.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.cmdContactTrainer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.cmdContactTrainer.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdContactTrainer.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.cmdContactTrainer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.cmdContactTrainer.FillColor = System.Drawing.Color.MediumVioletRed
+        Me.cmdContactTrainer.FillColor2 = System.Drawing.Color.Red
+        Me.cmdContactTrainer.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.cmdContactTrainer.ForeColor = System.Drawing.Color.White
+        Me.cmdContactTrainer.Image = CType(resources.GetObject("cmdContactTrainer.Image"), System.Drawing.Image)
+        Me.cmdContactTrainer.ImageSize = New System.Drawing.Size(80, 80)
+        Me.cmdContactTrainer.Location = New System.Drawing.Point(39, 52)
+        Me.cmdContactTrainer.Name = "cmdContactTrainer"
+        Me.cmdContactTrainer.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.cmdContactTrainer.Size = New System.Drawing.Size(80, 80)
+        Me.cmdContactTrainer.TabIndex = 4
         '
         'Guna2HtmlLabel6
         '
@@ -1075,37 +1075,37 @@ Partial Class Form2
         'grid
         '
         Me.grid.AllowUserToAddRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        Me.grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(100, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.White
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.grid.ColumnHeadersHeight = 4
         Me.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.grid.DefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(125, Byte), Integer), CType(CType(137, Byte), Integer), CType(CType(149, Byte), Integer))
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.grid.DefaultCellStyle = DataGridViewCellStyle7
         Me.grid.GridColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.grid.Location = New System.Drawing.Point(3, 41)
         Me.grid.Name = "grid"
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.grid.RowHeadersDefaultCellStyle = DataGridViewCellStyle8
         Me.grid.RowHeadersVisible = False
         Me.grid.RowTemplate.Height = 25
         Me.grid.Size = New System.Drawing.Size(516, 112)
@@ -1165,36 +1165,36 @@ Partial Class Form2
         'Timer1
         '
         '
-        'Guna2TabControl1
+        'tabControl
         '
-        Me.Guna2TabControl1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.Guna2TabControl1.Controls.Add(Me.TabPage1)
-        Me.Guna2TabControl1.Controls.Add(Me.TabPage2)
-        Me.Guna2TabControl1.Controls.Add(Me.TabPage3)
-        Me.Guna2TabControl1.Controls.Add(Me.TabPage4)
-        Me.Guna2TabControl1.ItemSize = New System.Drawing.Size(180, 40)
-        Me.Guna2TabControl1.Location = New System.Drawing.Point(12, 82)
-        Me.Guna2TabControl1.Name = "Guna2TabControl1"
-        Me.Guna2TabControl1.SelectedIndex = 0
-        Me.Guna2TabControl1.Size = New System.Drawing.Size(869, 573)
-        Me.Guna2TabControl1.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
-        Me.Guna2TabControl1.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2TabControl1.TabButtonHoverState.ForeColor = System.Drawing.Color.White
-        Me.Guna2TabControl1.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty
-        Me.Guna2TabControl1.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonIdleState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2TabControl1.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(167, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty
-        Me.Guna2TabControl1.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(49, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Guna2TabControl1.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
-        Me.Guna2TabControl1.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TabControl1.TabButtonSize = New System.Drawing.Size(180, 40)
-        Me.Guna2TabControl1.TabIndex = 16
-        Me.Guna2TabControl1.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.tabControl.Alignment = System.Windows.Forms.TabAlignment.Left
+        Me.tabControl.Controls.Add(Me.TabPage1)
+        Me.tabControl.Controls.Add(Me.TabPage2)
+        Me.tabControl.Controls.Add(Me.TabPage3)
+        Me.tabControl.Controls.Add(Me.TabPage4)
+        Me.tabControl.ItemSize = New System.Drawing.Size(180, 40)
+        Me.tabControl.Location = New System.Drawing.Point(12, 82)
+        Me.tabControl.Name = "tabControl"
+        Me.tabControl.SelectedIndex = 0
+        Me.tabControl.Size = New System.Drawing.Size(869, 573)
+        Me.tabControl.TabButtonHoverState.BorderColor = System.Drawing.Color.Empty
+        Me.tabControl.TabButtonHoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.tabControl.TabButtonHoverState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tabControl.TabButtonHoverState.ForeColor = System.Drawing.Color.White
+        Me.tabControl.TabButtonHoverState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(40, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(70, Byte), Integer))
+        Me.tabControl.TabButtonIdleState.BorderColor = System.Drawing.Color.Empty
+        Me.tabControl.TabButtonIdleState.FillColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.tabControl.TabButtonIdleState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tabControl.TabButtonIdleState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(156, Byte), Integer), CType(CType(160, Byte), Integer), CType(CType(167, Byte), Integer))
+        Me.tabControl.TabButtonIdleState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
+        Me.tabControl.TabButtonSelectedState.BorderColor = System.Drawing.Color.Empty
+        Me.tabControl.TabButtonSelectedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(29, Byte), Integer), CType(CType(37, Byte), Integer), CType(CType(49, Byte), Integer))
+        Me.tabControl.TabButtonSelectedState.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.tabControl.TabButtonSelectedState.ForeColor = System.Drawing.Color.White
+        Me.tabControl.TabButtonSelectedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(76, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.tabControl.TabButtonSize = New System.Drawing.Size(180, 40)
+        Me.tabControl.TabIndex = 16
+        Me.tabControl.TabMenuBackColor = System.Drawing.Color.FromArgb(CType(CType(33, Byte), Integer), CType(CType(42, Byte), Integer), CType(CType(57, Byte), Integer))
         '
         'TabPage1
         '
@@ -1245,7 +1245,7 @@ Partial Class Form2
         Me.BackColor = System.Drawing.Color.DarkSlateGray
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(893, 649)
-        Me.Controls.Add(Me.Guna2TabControl1)
+        Me.Controls.Add(Me.tabControl)
         Me.Controls.Add(Me.lblBanner)
         Me.Controls.Add(Me.cmdClose)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -1293,7 +1293,7 @@ Partial Class Form2
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Guna2GroupBox1.ResumeLayout(False)
         CType(Me.grid, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Guna2TabControl1.ResumeLayout(False)
+        Me.tabControl.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
@@ -1364,13 +1364,13 @@ Partial Class Form2
     Friend WithEvents Guna2ContainerControl5 As Guna.UI2.WinForms.Guna2ContainerControl
     Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2ContainerControl6 As Guna.UI2.WinForms.Guna2ContainerControl
-    Friend WithEvents Guna2GradientCircleButton4 As Guna.UI2.WinForms.Guna2GradientCircleButton
+    Friend WithEvents cmdContactTrainer As Guna.UI2.WinForms.Guna2GradientCircleButton
     Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents progressWorkout As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents cmdToSettings As Guna.UI2.WinForms.Guna2GradientCircleButton
     Friend WithEvents cmdToMeals As Guna.UI2.WinForms.Guna2GradientCircleButton
     Friend WithEvents cmdToWorkout As Guna.UI2.WinForms.Guna2GradientCircleButton
-    Friend WithEvents Guna2TabControl1 As Guna.UI2.WinForms.Guna2TabControl
+    Friend WithEvents tabControl As Guna.UI2.WinForms.Guna2TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents TabPage3 As TabPage
